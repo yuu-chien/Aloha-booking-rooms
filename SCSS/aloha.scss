@@ -1,0 +1,45 @@
+@import "./base/reset";
+@import "./base/base";
+
+@import "./layout/grid";
+
+@import "./utils/variables";
+@import "./utils/utilities";
+
+@import "./components/card";
+
+
+*{
+    outline: 1px solid salmon;
+}
+
+.seb-tit {
+    font-family: 'Raleway';
+    font-size: 32px;
+    font-weight: bold;
+    color: $color-basic-b;
+}
+
+.card {
+    position: relative;
+    .pop-img {
+        height: 78px;
+        position: relative;
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(270deg,transparent,#000);
+        }
+    }
+    .pop-txt {
+        width: 75%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
