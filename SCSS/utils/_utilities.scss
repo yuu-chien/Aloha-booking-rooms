@@ -27,6 +27,9 @@
 }
 
 // mr --- margin-right
+.mr-tiny {
+    margin-right: $basic_unit*0.5;
+}
 .mr-1 {
     margin-right: $basic_unit;
 }
@@ -55,6 +58,7 @@
     margin-bottom: $basic_unit*1.5;
 }
 .mb-m {
+    // 48
     margin-bottom: $basic_unit*3;
 }
 .mb-lg {
@@ -75,6 +79,13 @@
     // 30
     padding-right: $basic_unit*1.875;
 }
+.pr-m {
+    padding-right: $basic_unit*3;
+}
+.pl-xs {
+    // 24
+    padding-left: $basic_unit*1.5;
+}
 
 
 .d-flex {
@@ -85,6 +96,9 @@
 }
 .w-50p {
     max-width: 50%;
+}
+.w-100p {
+    width: 100%;
 }
 .d-flex {
     display: flex;
