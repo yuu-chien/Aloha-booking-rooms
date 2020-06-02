@@ -68,6 +68,9 @@
     padding-bottom: $basic_unit*4.5;
 }
 // pr --- padding-right
+.pr-1 {
+    padding-right: $basic_unit;
+}
 .pr-sm {
     // 30
     padding-right: $basic_unit*1.875;
@@ -151,3 +154,8 @@
 .bgc-tertiary {
     background-color: $color-tertiary;
 }
+.bgc-basic-w {
+    background-color: $color-basic-w;
+}
+
+
