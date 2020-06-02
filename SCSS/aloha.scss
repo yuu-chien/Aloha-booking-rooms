@@ -6,8 +6,11 @@
 @import "./utils/variables";
 @import "./utils/utilities";
 
+@import "./components/navbar";
 @import "./components/card";
 @import "./components/button";
+@import "./components/input";
+@import "./components/footer";
 
 
 *{
@@ -19,6 +22,20 @@
     font-size: 32px;
     font-weight: bold;
     color: $color-basic-b;
+}
+
+.header {
+    height: 80vh;
+    margin-bottom: 120px;
+    background: url(../img/Sydney-Opera-House.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    .header-input-wrap {
+        border-radius: 8px;
+        padding: 24px;
+        position: absolute;
+        bottom: -54px;
+    }
 }
 
 .card {
@@ -60,7 +77,6 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
 }
-
 .index-sub {
     padding-top: 92px;
     padding-bottom: 92px;
