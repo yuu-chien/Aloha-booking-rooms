@@ -7,6 +7,7 @@
 @import "./utils/utilities";
 
 @import "./components/card";
+@import "./components/button";
 
 
 *{
@@ -42,4 +43,25 @@
         left: 50%;
         transform: translate(-50%,-50%);
     }
+}
+
+.ins-img {
+    height: 263px;
+}
+.ins-tit {
+    height: 40px;
+    overflow: hidden;
+}
+.ins-dec {
+    height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.index-sub {
+    padding-top: 92px;
+    padding-bottom: 92px;
 }
