@@ -1,6 +1,13 @@
 .navbar {
+    height: 72px;
     padding-top: 24px;
     padding-bottom: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    z-index: 10;
+    background: $color-basic-w;
 }
 
 .logo {
