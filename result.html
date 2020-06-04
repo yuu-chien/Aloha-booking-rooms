@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./CSS/aloha.all.min.css">
-    <title>ALOHA</title>
+    <title>ALOHA｜</title>
 </head>
 <body>
     <!-- navbar -->
@@ -47,21 +47,21 @@
                         <span class="material-icons color-basic-b">person</span>
                         <input type="text" placeholder="Guests" class="input">
                     </li>
-                    <button class="button btn-primary">SEARCH</button>
+                    <button class="button btn-primary btn-b">SEARCH</button>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!--  -->
-    <section>
+    <!-- main -->
+    <section class="mb-lg">
         <div class="container">
             <div class="row">
                 <!-- 左側選單 -->
                 <section class="col-4">
-                    <h2></h2>
+                    <h2>Reykjavík</h2>
                     <ul class="bgc-secondary pl-xs pr-xs border-rad-8px">
-                        <li class="pt-xs pb-xs result-b">
+                        <li class="pt-xs pb-xs result-b-btm-w">
                             <h5 class="fw-bold color-basic-b mb-1">Deals</h5>
                             <ul>
                                 <li class="result-filter-item mb-tiny">
@@ -78,7 +78,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="pt-xs pb-xs result-b">
+                        <li class="pt-xs pb-xs result-b-btm-w">
                             <h5 class="fw-bold color-basic-b mb-1">Popular filter</h5>
                             <ul>
                                 <li class="result-filter-item mb-tiny">
@@ -95,7 +95,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="pt-xs pb-xs result-b">
+                        <li class="pt-xs pb-xs result-b-btm-w">
                             <h5 class="fw-bold color-basic-b mb-1">Rating</h5>
                             <ul>
                                 <li class="result-filter-item mb-tiny">
@@ -150,18 +150,110 @@
                 <!-- 右側列表 -->
                 <section class="col-8">
                     <ul>
-                        <li>
-                            <div class="result-card">
+                        <li class="pt-xs pb-xs result-b-btm-sec">
+                            <div class="result-card d-flex">
                                 <div class="result-card-img">
-                                    <img src="https://images.unsplash.com/photo-1566195992011-5f6b21e539aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80" alt="">
+                                    <img src="./img/_hr_1.jpg" alt="">
                                 </div>
-                                <div class="result-card-info">
-                                    <div></div>
+                                <div class="result-card-info d-flex flex-d-col jc-space-between">
+                                    <div class="mb-1">
+                                        <div class="d-flex jc-space-between">
+                                            <div class="d-flex fz-ets color-tertiary">
+                                                <p class="color-primary">101 Reykjavík</p>
+                                                <p class="">．</p>
+                                                <p class="">1.2 km from center</p>
+                                            </div>
+                                            <div class="d-flex fz-xxs">
+                                                <p class="color-basic-b">★★★★</p>
+                                                <p class="color-tertiary">4.0 (283)</p>
+                                            </div>
+                                        </div>
+                                        <h3 class="fw-bold fz-sm font-primary color-basic-b">Skuggia Hotel</h3>
+                                    </div>
+                                    <div class="mb-1 d-flex flex-d-col">
+                                        <p class="fw-bold fz-xxs">Deluxe Double Room</p>
+                                        <p class="fz-ets color-tertiary">2 guests・1 bed (Queen size)</p>
+                                    </div>
+                                    <div class="d-flex jc-space-between ai-flex-end">
+                                        <div class="d-flex fz-ets">
+                                            <p class="result-card-tag">Free cancellation</p>
+                                            <p class="result-card-tag">No prepayment</p>
+                                        </div>
+                                        <div class="ta-right">
+                                            <p class="fz-ets color-tertiary">per night</p>
+                                            <p class="fw-bold fz-sm font-primary color-basic-b">TWD 1,980</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pt-xs pb-xs result-b-btm-sec">
+                            <div class="result-card d-flex">
+                                <div class="result-card-img">
+                                    <img src="./img/_hr_2.jpg" alt="">
+                                </div>
+                                <div class="result-card-info d-flex flex-d-col jc-space-between">
+                                    <div class="mb-1">
+                                        <div class="d-flex jc-space-between">
+                                            <div class="d-flex fz-ets color-tertiary">
+                                                <p class="color-primary">Kópavogur</p>
+                                                <p class="">．</p>
+                                                <p class="">8 km from center</p>
+                                            </div>
+                                            <div class="d-flex fz-xxs">
+                                                <p class="color-basic-b">★★★★★</p>
+                                                <p class="color-tertiary">5.0 (121)</p>
+                                            </div>
+                                        </div>
+                                        <h3 class="fw-bold fz-sm font-primary color-basic-b">Hótel Heiðmörk</h3>
+                                    </div>
+                                    <div class="mb-1 d-flex flex-d-col">
+                                        <p class="fw-bold fz-xxs">Standard Double Room</p>
+                                        <p class="fz-ets color-tertiary">2 guests・1 bed (Queen size)</p>
+                                    </div>
+                                    <div class="d-flex jc-space-between ai-flex-end">
+                                        <div class="d-flex fz-ets">
+                                            <p class="result-card-tag">Free cancellation</p>
+                                            <!-- <p class="result-card-tag">No prepayment</p> -->
+                                        </div>
+                                        <div class="result-card-info-discount ta-right">
+                                            <p class="fz-ets color-tertiary">per night</p>
+                                            <del>TWD 2,460</del>
+                                            <p class="fw-bold fz-sm font-primary color-primary">TWD 2,460</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                     </ul>
+                    <div class="pagination-bar d-flex jc-space-between ai-center bgc-secondary">
+                        <button class="button btn-secondary btn-s">PREVIOUS</button>
+                        <!-- ul.d-flex>li*5>a{$} -->
+                        <ul class="d-flex">
+                            <li class="pagination pagination-active"><a href="">1</a></li>
+                            <li class="pagination"><a href="">2</a></li>
+                            <li class="pagination"><a href="">3</a></li>
+                            <li class="pagination"><a href="">4</a></li>
+                            <li class="pagination"><a href="">...</a></li>
+                            <li class="pagination"><a href="">6</a></li>
+                            <li class="pagination"><a href="">7</a></li>
+                        </ul>
+                        <button class="button btn-primary btn-s">NEXT</button>
+                    </div>
                 </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe for Exclusive Offer -->
+    <section class="sub bgc-secondary">
+        <div class="container d-flex ai-center h-100p">
+            <div class="d-flex jc-space-between w-100p h-100p">
+                <p class="fz-m fw-bold color-basic-b mr-37">Subscribe for Exclusive Offer</p>
+                <div class="d-flex flex-1">
+                    <input type="text" name="" id="" placeholder="Your email address" class="input">
+                    <input type="submit" value="subscribe" class="button btn-primary btn-b">
+                </div>
             </div>
         </div>
     </section>
