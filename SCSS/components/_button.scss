@@ -4,18 +4,25 @@
     text-transform: uppercase;
 }
 
-.btn-primary {
+// btn-small
+.btn-s {
+    height: 36px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+// btn-big
+.btn-b {
     padding: 16px 32px;
     font-size: 16px;
+}
+
+.btn-primary {
     color: $color-basic-w;
     background-color: $color-primary;
     border: none;
 }
 
 .btn-secondary {
-    height: 36px;
-    padding: 8px 16px;
-    font-size: 14px;
     color: $color-primary;
     background-color: $color-basic-w;
     border: 1px solid $color-primary;
