@@ -1,0 +1,18 @@
+.gallery {
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.gallery-lg {
+    height: 434px;
+}
+.gallery-m {
+    height: 213px;
+}
+.gallery-s {
+    height: 151px;
+}
