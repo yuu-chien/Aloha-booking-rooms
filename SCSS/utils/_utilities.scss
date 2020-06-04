@@ -74,6 +74,9 @@
 }
 
 // pb --- padding-bottom
+.pb-tiny {
+    padding-bottom: $basic_unit*0.5;
+}
 .pb-xs {
     // 24
     padding-bottom: $basic_unit*1.5;
@@ -83,12 +86,15 @@
     padding-bottom: $basic_unit*4.5;
 }
 // pr --- padding-right
-.pr-xs {
-    // 24
-    padding-right: $basic_unit*1.5;
+.pr-tiny {
+    padding-right: $basic_unit*0.5;
 }
 .pr-1 {
     padding-right: $basic_unit;
+}
+.pr-xs {
+    // 24
+    padding-right: $basic_unit*1.5;
 }
 .pr-sm {
     // 30
