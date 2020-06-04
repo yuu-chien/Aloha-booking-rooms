@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./CSS/aloha.all.min.css">
+    <title>ALOHA</title>
+</head>
+<body>
+    <!-- navbar -->
+    <!-- <nav class="navbar">
+        <div class="container d-flex jc-space-between ai-center">
+            <h1 class="logo">
+                <a href="" alt="ALOHA">ALOHA</a>
+            </h1>
+            <ul class="d-flex ai-center">
+                <li class="d-flex ai-center mr-m">
+                    <span class="material-icons">language</span>
+                    <span class="material-icons">arrow_drop_down</span>
+                </li>
+                <li class="mr-m">
+                    <a href="">Sign up</a>
+                </li>
+                <li>
+                    <a href="">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+
+    <!-- search bar -->
+    <section class="pt-xs pb-xs mb-xs bgc-secondary">
+        <div class="container">
+            <div class="d-flex">
+                <ul class="d-flex jc-space-between w-100p">
+                    <li class="d-flex jc-center ai-center mr-1 bgc-basic-w search-box">
+                        <span class="material-icons color-basic-b">location_on</span>
+                        <input type="text" placeholder="Destination" class="input">
+                    </li>
+                    <li class="d-flex jc-center ai-center mr-1 bgc-basic-w search-box">
+                        <span class="material-icons color-basic-b">date_range</span>
+                        <input type="text" placeholder="Check-in / Check-out" class="input">
+                    </li>
+                    <li class="d-flex jc-center ai-center mr-1 bgc-basic-w search-box">
+                        <span class="material-icons color-basic-b">person</span>
+                        <input type="text" placeholder="Guests" class="input">
+                    </li>
+                    <button class="button btn-primary">SEARCH</button>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <!-- 左側選單 -->
+                <section class="col-4">
+                    <h2></h2>
+                    <ul class="bgc-secondary pl-xs pr-xs border-rad-8px">
+                        <li class="pt-xs pb-xs result-b">
+                            <h5 class="fw-bold color-basic-b mb-1">Deals</h5>
+                            <ul>
+                                <li class="result-filter-item mb-tiny">
+                                    <input type="checkbox" name="freeCancellation" id="freeCancellation">
+                                    <label for="freeCancellation">Free cancellation</label>
+                                </li>
+                                <li class="result-filter-item mb-tiny">
+                                    <input type="checkbox" name="noPrepayment" id="noPrepayment">
+                                    <label for="noPrepayment">No prepayment</label>
+                                </li>
+                                <li class="result-filter-item">
+                                    <input type="checkbox" name="specialOffer" id="specialOffer">
+                                    <label for="specialOffer">Special offers</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pt-xs pb-xs result-b">
+                            <h5 class="fw-bold color-basic-b mb-1">Popular filter</h5>
+                            <ul>
+                                <li class="result-filter-item mb-tiny">
+                                    <input type="checkbox" name="Breakfast" id="Breakfast">
+                                    <label for="Breakfast">Breakfast included</label>
+                                </li>
+                                <li class="result-filter-item mb-tiny">
+                                    <input type="checkbox" name="FreeWi-Fi" id="FreeWi-Fi">
+                                    <label for="FreeWi-Fi">Free Wi-Fi</label>
+                                </li>
+                                <li class="result-filter-item">
+                                    <input type="checkbox" name="swimmingPool" id="swimmingPool">
+                                    <label for="swimmingPool">Swimming pool</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pt-xs pb-xs result-b">
+                            <h5 class="fw-bold color-basic-b mb-1">Rating</h5>
+                            <ul>
+                                <li class="result-filter-item mb-tiny">
+                                    <input type="checkbox" name="fantastic" id="fantastic">
+                                    <label for="fantastic">★★★★★ 5.0</label>
+                                </li>
+                                <li class="result-filter-item mb-tiny">
+                                    <input type="checkbox" name="excellent" id="excellent">
+                                    <label for="excellent">★★★★ 4.0</label>
+                                </li>
+                                <li class="result-filter-item mb-tiny">
+                                    <input type="checkbox" name="great" id="great">
+                                    <label for="great">★★★ 3.0</label>
+                                </li>
+                                <li class="result-filter-item mb-tiny">
+                                    <input type="checkbox" name="good" id="good">
+                                    <label for="good">★★ 2.0</label>
+                                </li>
+                                <li class="result-filter-item mb-tiny">
+                                    <input type="checkbox" name="nice" id="nice">
+                                    <label for="nice">★ 1.0</label>
+                                </li>
+                                <li class="result-filter-item">
+                                    <input type="checkbox" name="none" id="none">
+                                    <label for="none">Unrated</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="pt-xs pb-xs">
+                            <h5 class="fw-bold color-basic-b mb-1">Stay type</h5>
+                            <ul>
+                                <li class="result-filter-item mb-tiny">
+                                    <input type="checkbox" name="hotel" id="hotel">
+                                    <label for="hotel">Hotel</label>
+                                </li>
+                                <li class="result-filter-item mb-tiny">
+                                    <input type="checkbox" name="apartment" id="apartment">
+                                    <label for="apartment">Apartment</label>
+                                </li>
+                                <li class="result-filter-item mb-tiny">
+                                    <input type="checkbox" name="unique" id="unique">
+                                    <label for="unique">Unique</label>
+                                </li>
+                                <li class="result-filter-item">
+                                    <input type="checkbox" name="hostel" id="hostel">
+                                    <label for="hostel">Hostel</label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <!-- 右側列表 -->
+                <section class="col-8">
+                    <ul>
+                        <li>
+                            <div class="result-card">
+                                <div class="result-card-img">
+                                    <img src="https://images.unsplash.com/photo-1566195992011-5f6b21e539aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80" alt="">
+                                </div>
+                                <div class="result-card-info">
+                                    <div></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

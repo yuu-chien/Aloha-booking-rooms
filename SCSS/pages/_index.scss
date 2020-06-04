@@ -1,28 +1,3 @@
-@import "./base/reset";
-@import "./base/base";
-
-@import "./layout/grid";
-
-@import "./utils/variables";
-@import "./utils/utilities";
-
-@import "./components/navbar";
-@import "./components/card";
-@import "./components/button";
-@import "./components/input";
-@import "./components/footer";
-
-
-*{
-    outline: 1px solid salmon;
-}
-
-.seb-tit {
-    font-family: 'Raleway';
-    font-size: 32px;
-    font-weight: bold;
-    color: $color-basic-b;
-}
 
 .header {
     height: 80vh;
@@ -30,7 +5,7 @@
     background: url(../img/Sydney-Opera-House.jpg) no-repeat center center;
     background-size: cover;
     position: relative;
-    .header-input-wrap {
+    .index-search-bar {
         border-radius: 8px;
         padding: 24px;
         position: absolute;

@@ -1,0 +1,55 @@
+// .container-l {
+//     max-width: 1140px;
+//     margin: 0 auto;
+// }
+// .row {
+//     // display: flex;
+//     padding: 0 15px;
+// }
+
+.search-box {
+    width: 30%;
+}
+
+.border-rad-8px {
+    border-radius: 8px;
+}
+
+.result-b {
+    border-bottom: 1.5px solid $color-basic-w;
+}
+
+.result-filter-item {
+    position: relative;
+    input {
+        opacity: 0;
+    }
+    input[type=checkbox] + label:before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: 1.5px solid $color-tertiary;
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        margin-top: 0.15rem;
+    }
+}
+
+
+.result-card {
+    height: 175px;
+    .result-card-img {
+        width: 35%;
+        height: 100%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
