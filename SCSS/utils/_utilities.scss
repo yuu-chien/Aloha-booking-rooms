@@ -26,12 +26,16 @@
     font-weight: bold;
 }
 
+.ml-xs {
+    margin-left: $basic_unit*1.5;
+}
+
 // mr --- margin-right
 .mr-tiny {
     margin-right: $basic_unit*0.5;
 }
 .mr-1 {
-    margin-right: $basic_unit;
+    margin-right: $basic_unit !important;
 }
 .mr-xs {
     // 24
@@ -51,7 +55,7 @@
    margin-bottom: $basic_unit*0.5; 
 }
 .mb-1 {
-    margin-bottom: $basic_unit;
+    margin-bottom: $basic_unit !important;
 }
 .mb-xs {
     // 24
@@ -90,7 +94,7 @@
     padding-right: $basic_unit*0.5;
 }
 .pr-1 {
-    padding-right: $basic_unit;
+    padding-right: $basic_unit !important;
 }
 .pr-xs {
     // 24
@@ -117,7 +121,7 @@
     min-height: 100%;
 }
 .w-50p {
-    max-width: 50%;
+    width: 50%;
 }
 .w-100p {
     width: 100%;
