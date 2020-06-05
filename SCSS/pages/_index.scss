@@ -6,10 +6,14 @@
     background-size: cover;
     position: relative;
     .index-search-bar {
+        width: 920px;
         border-radius: 8px;
         padding: 24px;
         position: absolute;
         bottom: -54px;
+        li {
+            border-radius: 4px;
+        }
     }
 }
 
@@ -20,13 +24,20 @@
     // border-bottom: 2px solid $color-secondary;
 }
 .top-tab-active {
-    color: $color-primary;
     border-bottom: 2px solid $color-primary;
+    a {
+        color: $color-primary;
+    }
 }
 
 
 .card {
     position: relative;
+    &:hover {
+        .pop-img::after {
+            background: transparent;
+        }
+    }
     .pop-img {
         height: 78px;
         position: relative;
@@ -38,6 +49,7 @@
             top: 0;
             left: 0;
             background: linear-gradient(270deg,transparent,#000);
+            transition: .2s;
         }
     }
     .pop-txt {
