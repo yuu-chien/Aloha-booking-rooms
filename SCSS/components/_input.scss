@@ -1,3 +1,4 @@
+// index 搜尋bar
 .input {
     ::placeholder {
         color: $color-tertiary;
@@ -7,4 +8,14 @@
     border: none;
     border-radius: 4px 0px 0px 4px;
     padding: 16px;
+}
+
+// 顯示搜尋結果的搜尋bar
+.result-input {
+    width: 100%;
+    border: none;
+    ::placeholder {
+        font-size: 14px;
+        color: $color-tertiary;
+    }
 }
