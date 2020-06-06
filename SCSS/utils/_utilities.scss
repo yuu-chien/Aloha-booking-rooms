@@ -23,7 +23,7 @@
     font-size: $basic_unit*3;
 }
 .fw-bold {
-    font-weight: bold;
+    font-weight: bolder;
 }
 .ml-1 {
     margin-left: $basic_unit !important;
@@ -125,6 +125,9 @@
 .h-100p {
     min-height: 100%;
 }
+.w-40p {
+    width: 40%;
+}
 .w-50p {
     width: 50%;
 }
@@ -170,6 +173,12 @@
 .ta-right {
     text-align: right;
 }
+
+// --- border-left
+.border-l {
+    border-left: 1px solid $color-secondary;
+}
+
 
 // -----------------------
 .font-primary {

@@ -9,15 +9,23 @@
 </head>
 <body>
     <!-- navbar -->
-    <!-- <nav class="navbar">
-        <div class="container d-flex jc-space-between ai-center">
+    <nav class="result-navbar">
+        <div class="container d-flex jc-space-between ai-center pt-xs pb-xs">
             <h1 class="logo">
                 <a href="" alt="ALOHA">ALOHA</a>
             </h1>
             <ul class="d-flex ai-center">
-                <li class="d-flex ai-center mr-m">
-                    <span class="material-icons">language</span>
-                    <span class="material-icons">arrow_drop_down</span>
+                <li>
+                    <div class="lan-list d-flex ai-center mr-m">
+                        <span class="material-icons">language</span>
+                        <span class="material-icons">arrow_drop_down</span>
+                    </div>
+                    <ul class="drop-list">
+                        <li><a href="">繁體中文</a></li>
+                        <li><a href="">English</a></li>
+                        <li><a href="">Français</a></li>
+                        <li><a href="">Español</a></li>
+                    </ul>
                 </li>
                 <li class="mr-m">
                     <a href="">Sign up</a>
@@ -27,236 +35,305 @@
                 </li>
             </ul>
         </div>
-    </nav> -->
+        <!-- search bar -->
+        <section class="pt-xs pb-xs bgc-secondary">
+            <div class="container">
 
+                <div class="d-flex bgc-secondary index-search-bar">
+                    <ul class="d-flex jc-space-between">
+                        <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
+                            <span class="material-icons color-basic-b pl-1 pr-1">location_on</span>
+                            <div class="w-100p">
+                                <p class="fz-ets fw-bold color-basic-b">Destination</p>
+                                <input type="text" placeholder="Reykjavík, Iceland" class="result-input">
+                            </div>
+                        </li>
+                        <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
+                            <span class="material-icons color-basic-b pl-1 pr-1">date_range</span>
+                            <div class="w-40p">
+                                <p class="fz-ets fw-bold color-basic-b">Check-in</p>
+                                <input type="text" placeholder="21 June" class="result-input">
+                            </div>
+                            <div class="w-50p pl-1 border-l">
+                                <p class="fz-ets fw-bold color-basic-b">Check-out</p>
+                                <input type="text" placeholder="23 June" class="result-input">
+                            </div>
+                        </li>
+                        <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
+                            <span class="material-icons color-basic-b pl-1 pr-1">person</span>
+                            <div class="w-100p">
+                                <p class="fz-ets fw-bold color-basic-b">Guests</p>
+                                <input type="text" placeholder="2 adults・1 room" class="result-input">
+                            </div>
+                        </li>
+                        <button class="button btn-primary btn-b">SEARCH</button>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </nav>
 
     <!-- search bar -->
-    <section class="pt-xs pb-xs mb-xs bgc-secondary">
+    <!-- <section class="pt-xs pb-xs mb-xs bgc-secondary">
         <div class="container">
-            <div class="d-flex">
-                <ul class="d-flex jc-space-between w-100p">
-                    <li class="d-flex jc-center ai-center mr-1 bgc-basic-w search-box">
-                        <span class="material-icons color-basic-b">location_on</span>
-                        <input type="text" placeholder="Destination" class="input">
+
+            <div class="d-flex bgc-secondary index-search-bar">
+                <ul class="d-flex jc-space-between">
+                    <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
+                        <span class="material-icons color-basic-b pl-1 pr-1">location_on</span>
+                        <div class="w-100p">
+                            <p class="fz-ets fw-bold color-basic-b">Destination</p>
+                            <input type="text" placeholder="Reykjavík, Iceland" class="result-input">
+                        </div>
                     </li>
-                    <li class="d-flex jc-center ai-center mr-1 bgc-basic-w search-box">
-                        <span class="material-icons color-basic-b">date_range</span>
-                        <input type="text" placeholder="Check-in / Check-out" class="input">
+                    <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
+                        <span class="material-icons color-basic-b pl-1 pr-1">date_range</span>
+                        <div class="w-40p">
+                            <p class="fz-ets fw-bold color-basic-b">Check-in</p>
+                            <input type="text" placeholder="21 June" class="result-input">
+                        </div>
+                        <div class="w-50p pl-1 border-l">
+                            <p class="fz-ets fw-bold color-basic-b">Check-out</p>
+                            <input type="text" placeholder="23 June" class="result-input">
+                        </div>
                     </li>
-                    <li class="d-flex jc-center ai-center mr-1 bgc-basic-w search-box">
-                        <span class="material-icons color-basic-b">person</span>
-                        <input type="text" placeholder="Guests" class="input">
+                    <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
+                        <span class="material-icons color-basic-b pl-1 pr-1">person</span>
+                        <div class="w-100p">
+                            <p class="fz-ets fw-bold color-basic-b">Guests</p>
+                            <input type="text" placeholder="2 adults・1 room" class="result-input">
+                        </div>
                     </li>
                     <button class="button btn-primary btn-b">SEARCH</button>
                 </ul>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- main -->
-    <section class="mb-lg">
-        <div class="container">
-            <div class="row">
-                <!-- 左側選單 -->
-                <section class="col-4">
-                    <h2>Reykjavík</h2>
-                    <ul class="bgc-secondary pl-xs pr-xs border-rad-8px">
-                        <li class="pt-xs pb-xs result-b-btm-w">
-                            <h5 class="fw-bold color-basic-b mb-1">Deals</h5>
-                            <ul>
-                                <li class="result-filter-item mb-tiny">
-                                    <input type="checkbox" name="freeCancellation" id="freeCancellation">
-                                    <label for="freeCancellation">Free cancellation</label>
-                                </li>
-                                <li class="result-filter-item mb-tiny">
-                                    <input type="checkbox" name="noPrepayment" id="noPrepayment">
-                                    <label for="noPrepayment">No prepayment</label>
-                                </li>
-                                <li class="result-filter-item">
-                                    <input type="checkbox" name="specialOffer" id="specialOffer">
-                                    <label for="specialOffer">Special offers</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="pt-xs pb-xs result-b-btm-w">
-                            <h5 class="fw-bold color-basic-b mb-1">Popular filter</h5>
-                            <ul>
-                                <li class="result-filter-item mb-tiny">
-                                    <input type="checkbox" name="Breakfast" id="Breakfast">
-                                    <label for="Breakfast">Breakfast included</label>
-                                </li>
-                                <li class="result-filter-item mb-tiny">
-                                    <input type="checkbox" name="FreeWi-Fi" id="FreeWi-Fi">
-                                    <label for="FreeWi-Fi">Free Wi-Fi</label>
-                                </li>
-                                <li class="result-filter-item">
-                                    <input type="checkbox" name="swimmingPool" id="swimmingPool">
-                                    <label for="swimmingPool">Swimming pool</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="pt-xs pb-xs result-b-btm-w">
-                            <h5 class="fw-bold color-basic-b mb-1">Rating</h5>
-                            <ul>
-                                <li class="result-filter-item mb-tiny">
-                                    <input type="checkbox" name="fantastic" id="fantastic">
-                                    <label for="fantastic">★★★★★ 5.0</label>
-                                </li>
-                                <li class="result-filter-item mb-tiny">
-                                    <input type="checkbox" name="excellent" id="excellent">
-                                    <label for="excellent">★★★★ 4.0</label>
-                                </li>
-                                <li class="result-filter-item mb-tiny">
-                                    <input type="checkbox" name="great" id="great">
-                                    <label for="great">★★★ 3.0</label>
-                                </li>
-                                <li class="result-filter-item mb-tiny">
-                                    <input type="checkbox" name="good" id="good">
-                                    <label for="good">★★ 2.0</label>
-                                </li>
-                                <li class="result-filter-item mb-tiny">
-                                    <input type="checkbox" name="nice" id="nice">
-                                    <label for="nice">★ 1.0</label>
-                                </li>
-                                <li class="result-filter-item">
-                                    <input type="checkbox" name="none" id="none">
-                                    <label for="none">Unrated</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="pt-xs pb-xs">
-                            <h5 class="fw-bold color-basic-b mb-1">Stay type</h5>
-                            <ul>
-                                <li class="result-filter-item mb-tiny">
-                                    <input type="checkbox" name="hotel" id="hotel">
-                                    <label for="hotel">Hotel</label>
-                                </li>
-                                <li class="result-filter-item mb-tiny">
-                                    <input type="checkbox" name="apartment" id="apartment">
-                                    <label for="apartment">Apartment</label>
-                                </li>
-                                <li class="result-filter-item mb-tiny">
-                                    <input type="checkbox" name="unique" id="unique">
-                                    <label for="unique">Unique</label>
-                                </li>
-                                <li class="result-filter-item">
-                                    <input type="checkbox" name="hostel" id="hostel">
-                                    <label for="hostel">Hostel</label>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-                <!-- 右側列表 -->
-                <section class="col-8">
-                    <ul>
-                        <li class="pt-xs pb-xs result-b-btm-sec">
-                            <div class="result-card d-flex">
-                                <div class="result-card-img">
-                                    <img src="./img/_hr_1.jpg" alt="">
-                                </div>
-                                <div class="result-card-info d-flex flex-d-col jc-space-between">
-                                    <div class="mb-1">
-                                        <div class="d-flex jc-space-between">
-                                            <div class="d-flex fz-ets color-tertiary">
-                                                <p class="color-primary">101 Reykjavík</p>
-                                                <p class="">．</p>
-                                                <p class="">1.2 km from center</p>
-                                            </div>
-                                            <div class="d-flex fz-xxs">
-                                                <p class="color-basic-b">★★★★</p>
-                                                <p class="color-tertiary">4.0 (283)</p>
-                                            </div>
-                                        </div>
-                                        <h3 class="fw-bold fz-sm font-primary color-basic-b">Skuggia Hotel</h3>
-                                    </div>
-                                    <div class="mb-1 d-flex flex-d-col">
-                                        <p class="fw-bold fz-xxs">Deluxe Double Room</p>
-                                        <p class="fz-ets color-tertiary">2 guests・1 bed (Queen size)</p>
-                                    </div>
-                                    <div class="d-flex jc-space-between ai-flex-end">
-                                        <div class="d-flex fz-ets">
-                                            <p class="result-card-tag">Free cancellation</p>
-                                            <p class="result-card-tag">No prepayment</p>
-                                        </div>
-                                        <div class="ta-right">
-                                            <p class="fz-ets color-tertiary">per night</p>
-                                            <p class="fw-bold fz-sm font-primary color-basic-b">TWD 1,980</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="pt-xs pb-xs result-b-btm-sec">
-                            <div class="result-card d-flex">
-                                <div class="result-card-img">
-                                    <img src="./img/_hr_2.jpg" alt="">
-                                </div>
-                                <div class="result-card-info d-flex flex-d-col jc-space-between">
-                                    <div class="mb-1">
-                                        <div class="d-flex jc-space-between">
-                                            <div class="d-flex fz-ets color-tertiary">
-                                                <p class="color-primary">Kópavogur</p>
-                                                <p class="">．</p>
-                                                <p class="">8 km from center</p>
-                                            </div>
-                                            <div class="d-flex fz-xxs">
-                                                <p class="color-basic-b">★★★★★</p>
-                                                <p class="color-tertiary">5.0 (121)</p>
-                                            </div>
-                                        </div>
-                                        <h3 class="fw-bold fz-sm font-primary color-basic-b">Hótel Heiðmörk</h3>
-                                    </div>
-                                    <div class="mb-1 d-flex flex-d-col">
-                                        <p class="fw-bold fz-xxs">Standard Double Room</p>
-                                        <p class="fz-ets color-tertiary">2 guests・1 bed (Queen size)</p>
-                                    </div>
-                                    <div class="d-flex jc-space-between ai-flex-end">
-                                        <div class="d-flex fz-ets">
-                                            <p class="result-card-tag">Free cancellation</p>
-                                            <!-- <p class="result-card-tag">No prepayment</p> -->
-                                        </div>
-                                        <div class="result-card-info-discount ta-right">
-                                            <p class="fz-ets color-tertiary">per night</p>
-                                            <del>TWD 2,460</del>
-                                            <p class="fw-bold fz-sm font-primary color-primary">TWD 2,460</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="pagination-bar d-flex jc-space-between ai-center bgc-secondary">
-                        <button class="button btn-secondary btn-s">PREVIOUS</button>
-                        <!-- ul.d-flex>li*5>a{$} -->
-                        <ul class="d-flex">
-                            <li class="pagination pagination-active"><a href="">1</a></li>
-                            <li class="pagination"><a href="">2</a></li>
-                            <li class="pagination"><a href="">3</a></li>
-                            <li class="pagination"><a href="">4</a></li>
-                            <li class="pagination"><a href="">...</a></li>
-                            <li class="pagination"><a href="">6</a></li>
-                            <li class="pagination"><a href="">7</a></li>
+    <main class="result-main d-flex flex-d-col jc-center ai-center w-100p">
+        <!-- main -->
+        <section class="mb-lg">
+            <div class="container">
+                <div class="row">
+                    <!-- 左側選單 -->
+                    <section class="col-4">
+                        <div class="d-flex font-primary pt-xs">
+                            <h2 class="fz-m fw-bold mr-tiny">Reykjavík</h2>
+                            <span class="color-primary">128</span>
+                        </div>
+                        <ul class="bgc-secondary pl-xs pr-xs fillet-8">
+                            <li class="pt-xs pb-xs result-b-btm-w">
+                                <h5 class="fw-bold color-basic-b mb-1">Deals</h5>
+                                <ul>
+                                    <li class="result-filter-item mb-tiny">
+                                        <input type="checkbox" name="freeCancellation" id="freeCancellation">
+                                        <label for="freeCancellation">Free cancellation</label>
+                                    </li>
+                                    <li class="result-filter-item mb-tiny">
+                                        <input type="checkbox" name="noPrepayment" id="noPrepayment">
+                                        <label for="noPrepayment">No prepayment</label>
+                                    </li>
+                                    <li class="result-filter-item">
+                                        <input type="checkbox" name="specialOffer" id="specialOffer">
+                                        <label for="specialOffer">Special offers</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="pt-xs pb-xs result-b-btm-w">
+                                <h5 class="fw-bold color-basic-b mb-1">Popular filter</h5>
+                                <ul>
+                                    <li class="result-filter-item mb-tiny">
+                                        <input type="checkbox" name="Breakfast" id="Breakfast">
+                                        <label for="Breakfast">Breakfast included</label>
+                                    </li>
+                                    <li class="result-filter-item mb-tiny">
+                                        <input type="checkbox" name="FreeWi-Fi" id="FreeWi-Fi">
+                                        <label for="FreeWi-Fi">Free Wi-Fi</label>
+                                    </li>
+                                    <li class="result-filter-item">
+                                        <input type="checkbox" name="swimmingPool" id="swimmingPool">
+                                        <label for="swimmingPool">Swimming pool</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="pt-xs pb-xs result-b-btm-w">
+                                <h5 class="fw-bold color-basic-b mb-1">Rating</h5>
+                                <ul>
+                                    <li class="result-filter-item mb-tiny">
+                                        <input type="checkbox" name="fantastic" id="fantastic">
+                                        <label for="fantastic">★★★★★ 5.0</label>
+                                    </li>
+                                    <li class="result-filter-item mb-tiny">
+                                        <input type="checkbox" name="excellent" id="excellent">
+                                        <label for="excellent">★★★★ 4.0</label>
+                                    </li>
+                                    <li class="result-filter-item mb-tiny">
+                                        <input type="checkbox" name="great" id="great">
+                                        <label for="great">★★★ 3.0</label>
+                                    </li>
+                                    <li class="result-filter-item mb-tiny">
+                                        <input type="checkbox" name="good" id="good">
+                                        <label for="good">★★ 2.0</label>
+                                    </li>
+                                    <li class="result-filter-item mb-tiny">
+                                        <input type="checkbox" name="nice" id="nice">
+                                        <label for="nice">★ 1.0</label>
+                                    </li>
+                                    <li class="result-filter-item">
+                                        <input type="checkbox" name="none" id="none">
+                                        <label for="none">Unrated</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="pt-xs pb-xs">
+                                <h5 class="fw-bold color-basic-b mb-1">Stay type</h5>
+                                <ul>
+                                    <li class="result-filter-item mb-tiny">
+                                        <input type="checkbox" name="hotel" id="hotel">
+                                        <label for="hotel">Hotel</label>
+                                    </li>
+                                    <li class="result-filter-item mb-tiny">
+                                        <input type="checkbox" name="apartment" id="apartment">
+                                        <label for="apartment">Apartment</label>
+                                    </li>
+                                    <li class="result-filter-item mb-tiny">
+                                        <input type="checkbox" name="unique" id="unique">
+                                        <label for="unique">Unique</label>
+                                    </li>
+                                    <li class="result-filter-item">
+                                        <input type="checkbox" name="hostel" id="hostel">
+                                        <label for="hostel">Hostel</label>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
-                        <button class="button btn-primary btn-s">NEXT</button>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </section>
-
-    <!-- Subscribe for Exclusive Offer -->
-    <section class="sub bgc-secondary">
-        <div class="container d-flex ai-center h-100p">
-            <div class="d-flex jc-space-between w-100p h-100p">
-                <p class="fz-m fw-bold color-basic-b mr-37">Subscribe for Exclusive Offer</p>
-                <div class="d-flex flex-1">
-                    <input type="text" name="" id="" placeholder="Your email address" class="input">
-                    <input type="submit" value="subscribe" class="button btn-primary btn-b">
+                    </section>
+                    <!-- 右側列表 -->
+                    <section class="col-8">
+                        <!-- 右側列表 --- 搜尋結果篩選  -->
+                        <ul class="d-flex pt-xs">
+                            <li class="result-tab-active mr-xs fw-bold">Recommended</li>
+                            <li class="mr-xs fw-bold">Best value</li>
+                            <li class="mr-xs fw-bold">Lowest Price</li>
+                            <li class="mr-xs fw-bold">Distance to City Center</li>
+                            <!-- 右側列表 --- 搜尋結果列表 -->
+                        </ul>
+                        <ul class="mb-m">
+                            <li class="pt-xs pb-xs result-b-btm-sec">
+                                <div class="result-card d-flex">
+                                    <div class="result-card-img">
+                                        <img src="./img/_hr_1.jpg" alt="">
+                                    </div>
+                                    <div class="result-card-info d-flex flex-d-col jc-space-between">
+                                        <div class="mb-1">
+                                            <div class="d-flex jc-space-between">
+                                                <div class="d-flex fz-ets color-tertiary">
+                                                    <p class="color-primary">101 Reykjavík</p>
+                                                    <p class="">．</p>
+                                                    <p class="">1.2 km from center</p>
+                                                </div>
+                                                <div class="d-flex fz-xxs">
+                                                    <p class="color-basic-b">★★★★</p>
+                                                    <p class="color-tertiary">4.0 (283)</p>
+                                                </div>
+                                            </div>
+                                            <h3 class="fw-bold fz-sm font-primary color-basic-b">Skuggia Hotel</h3>
+                                        </div>
+                                        <div class="d-flex flex-d-col">
+                                            <p class="fw-bold fz-xxs">Deluxe Double Room</p>
+                                            <p class="fz-ets color-tertiary">2 guests・1 bed (Queen size)</p>
+                                        </div>
+                                        <div class="d-flex jc-space-between ai-flex-end">
+                                            <div class="d-flex fz-ets">
+                                                <p class="result-card-tag">Free cancellation</p>
+                                                <p class="result-card-tag">No prepayment</p>
+                                            </div>
+                                            <div class="ta-right">
+                                                <p class="fz-ets color-tertiary">per night</p>
+                                                <p class="fw-bold fz-sm font-primary color-basic-b">TWD 1,980</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="pt-xs pb-xs result-b-btm-sec">
+                                <div class="result-card d-flex">
+                                    <div class="result-card-img">
+                                        <img src="./img/_hr_2.jpg" alt="">
+                                    </div>
+                                    <div class="result-card-info d-flex flex-d-col jc-space-between">
+                                        <div class="mb-1">
+                                            <div class="d-flex jc-space-between">
+                                                <div class="d-flex fz-ets color-tertiary">
+                                                    <p class="color-primary">Kópavogur</p>
+                                                    <p class="">．</p>
+                                                    <p class="">8 km from center</p>
+                                                </div>
+                                                <div class="d-flex fz-xxs">
+                                                    <p class="color-basic-b">★★★★★</p>
+                                                    <p class="color-tertiary">5.0 (121)</p>
+                                                </div>
+                                            </div>
+                                            <h3 class="fw-bold fz-sm font-primary color-basic-b">Hótel Heiðmörk</h3>
+                                        </div>
+                                        <div class="d-flex flex-d-col">
+                                            <p class="fw-bold fz-xxs">Standard Double Room</p>
+                                            <p class="fz-ets color-tertiary">2 guests・1 bed (Queen size)</p>
+                                        </div>
+                                        <div class="d-flex jc-space-between ai-flex-end">
+                                            <div class="d-flex fz-ets">
+                                                <p class="result-card-tag">Free cancellation</p>
+                                                <!-- <p class="result-card-tag">No prepayment</p> -->
+                                            </div>
+                                            <div class="result-card-info-discount ta-right">
+                                                <p class="fz-ets color-tertiary">per night</p>
+                                                <del>TWD 2,460</del>
+                                                <p class="fw-bold fz-sm font-primary color-primary">TWD 2,460</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 右側列表 --- 頁碼 -->
+                        <div class="pagination-bar d-flex jc-space-between ai-center bgc-secondary">
+                            <button class="button btn-secondary btn-s">PREVIOUS</button>
+                            <!-- ul.d-flex>li*5>a{$} -->
+                            <ul class="d-flex">
+                                <li class="pagination pagination-active"><a href="">1</a></li>
+                                <li class="pagination"><a href="">2</a></li>
+                                <li class="pagination"><a href="">3</a></li>
+                                <li class="pagination"><a href="">4</a></li>
+                                <li class="pagination"><a href="">...</a></li>
+                                <li class="pagination"><a href="">6</a></li>
+                                <li class="pagination"><a href="">7</a></li>
+                            </ul>
+                            <button class="button btn-primary btn-s">NEXT</button>
+                        </div>
+                    </section>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- Subscribe for Exclusive Offer -->
+        <section class="sub bgc-secondary w-100p">
+            <div class="container d-flex ai-center h-100p">
+                <div class="d-flex jc-space-between w-100p h-100p">
+                    <p class="fz-m fw-bold font-primary color-basic-b mr-37">Subscribe for Exclusive Offer</p>
+                    <div class="d-flex flex-1">
+                        <input type="text" name="" id="" placeholder="Your email address" class="input">
+                        <input type="submit" value="subscribe" class="button btn-primary btn-b">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script>
+
+    let a = $(".result-navbar").height();
+    $(".result-main").css("top",a);
+
+</script>
 </html>

@@ -1,21 +1,25 @@
-// .container-l {
-//     max-width: 1140px;
-//     margin: 0 auto;
-// }
-// .row {
-//     // display: flex;
-//     padding: 0 15px;
-// }
+.result-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    z-index: 10;
+    background: $color-basic-w;
+    li {
+        cursor: pointer;
+    }
+    a {
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
 
 .mr-37 {
     margin-right: 37px;
 }
 
-.search-box {
-    width: 30%;
-}
-
-.border-rad-8px {
+.fillet-8 {
     border-radius: 8px;
 }
 
@@ -95,4 +99,14 @@
 .sub {
     padding: 32px 0;
     height: 104px;
+}
+
+
+.result-input-w {
+    width: 312px;
+    padding: 10px 0;
+}
+
+.result-tab-active {
+    color: $color-primary;
 }

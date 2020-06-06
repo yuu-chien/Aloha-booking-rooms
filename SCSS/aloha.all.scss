@@ -26,9 +26,6 @@
 @import "./pages/detail";
 
 
-
-
-
 *{
     outline: 1px solid salmon;
 }
@@ -38,4 +35,9 @@
     font-size: 32px;
     font-weight: bold;
     color: $color-basic-b;
+}
+
+.result-main {
+    position: absolute;
+    left: 0;
 }
