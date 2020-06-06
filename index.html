@@ -43,11 +43,14 @@
     <!-- header -->
     <header class="header">
         <div class="container d-flex jc-center ai-center h-100p">
-            <div class="d-flex jc-space-between ai-center color-basic-w w-100p ">
+            <div class="color-basic-w">
+                <h2 class="ta-center fz-lg fw-bold">Discover your ideal hotel<h2>                
+            </div>
+            <!-- <div class="d-flex jc-space-between ai-center color-basic-w w-100p">
                 <span class="material-icons fz-lg">navigate_before</span>
                 <h2 class="fz-lg fw-bold">Discover your ideal hotel</h2>
                 <span class="material-icons fz-lg">navigate_next</span>
-            </div>
+            </div> -->
             <div class="d-flex bgc-secondary index-search-bar">
                 <ul class="d-flex">
                     <li class="d-flex jc-center ai-center mr-1 bgc-basic-w">
@@ -69,8 +72,8 @@
     </header>
 
     <!-- Top Choices -->
-    <section class="mb-lg">
-        <div class="container d-flex flex-d-col">
+    <section class=" mb-lg">
+        <div class="container d-flex flex-d-col choices">
             <h2 class="seb-tit mb-xs">Top Choices</h2>
             <ul class="d-flex mb-xs">
                 <li class="pl-xs pr-xs top-tab-active">
@@ -199,6 +202,9 @@
                     </a>
                 </li>
             </ul>
+            <div class="choice-next d-flex jc-center ai-center">
+                <span class="material-icons">navigate_next</span>
+            </div>
         </div>
     </section>
 
@@ -407,11 +413,17 @@
     })
 
     $(document).ready(function(){
+        var owl = $('.owl-carousel');
         $(".owl-carousel").owlCarousel({
             loop: true,
             items: 4,
             margin: 30,
+            nav: false,
+            dots: false,
         });
+        $('.choice-next').on('click',function(){
+            owl.trigger('next.owl.carousel');
+        })
     });
 </script>
 </html>

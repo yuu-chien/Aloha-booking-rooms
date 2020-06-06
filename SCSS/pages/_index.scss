@@ -2,7 +2,9 @@
 .header {
     height: 80vh;
     margin-bottom: 120px;
-    background: url(../img/Sydney-Opera-House.jpg) no-repeat center center;
+    background: url(https://images.unsplash.com/photo-1494367067577-502b2c602fcc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1889&q=80) no-repeat;
+    background-attachment: fixed;
+    background-position: center 65%;
     background-size: cover;
     position: relative;
     .index-search-bar {
@@ -91,4 +93,20 @@
 .index-sub {
     padding-top: 92px;
     padding-bottom: 92px;
+}
+
+.choices {
+    position: relative;
+    .choice-next {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: $color-basic-b;
+        background-color: $color-secondary;
+        z-index: 50;
+    }
 }
