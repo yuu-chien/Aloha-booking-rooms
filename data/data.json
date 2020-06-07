@@ -1,7 +1,7 @@
 [
     {
         "name": "Skuggia Hotel",
-        "coverImg": "./img/_hr_1.jpg",
+        "coverImg": "./img/hr_1.jpg",
         "location": "Reykjavík",
         "locationTown": "101 Reykjavík",
         "locationCity": "Reykjavík",
@@ -18,7 +18,7 @@
     },
     {
         "name": "Hótel Heiöðmörk",
-        "coverImg": "./img/_hr_2.jpg",
+        "coverImg": "./img/hr_2.jpg",
         "location": "Reykjavík",
         "locationTown": "Kópavogur",
         "locationCity": "Reykjavík",
@@ -35,7 +35,7 @@
     },
     {
         "name": "Hotel Reeeykjavik Marina",
-        "coverImg": "./img/_hr_4.jpg",
+        "coverImg": "./img/hr_4.jpg",
         "location": "Reykjavík",
         "locationTown": "Myrargata",
         "locationCity": "Reykjavík",
@@ -52,7 +52,7 @@
     },
     {
         "name": "Óðinnn Skólavörðustígur",
-        "coverImg": "./img/_hr_5.jpg",
+        "coverImg": "./img/hr_5.jpg",
         "location": "Reykjavík",
         "locationTown": "101 Reykjavík",
         "locationCity": "Reykjavík",
@@ -69,7 +69,7 @@
     },
     {
         "name": "Eayja Guldsmeden",
-        "coverImg": "./img/_hr_7.jpg",
+        "coverImg": "./img/hr_7.jpg",
         "location": "Reykjavík",
         "locationTown": "105 Reykjavík",
         "locationCity": "Reykjavík",
