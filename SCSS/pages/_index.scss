@@ -16,20 +16,21 @@
         li {
             border-radius: 4px;
         }
+        a {
+            color: #fff;
+        }
     }
 }
 
 
 .top-tab {
-    color: $color-secondary;
+    cursor: pointer;
+    color: $color-tertiary;
     border-bottom: 2px solid $color-secondary;
 }
 .top-tab-active {
     color: $color-primary;
     border-bottom: 2px solid $color-primary;
-    a {
-        color: $color-primary;
-    }
 }
 
 .choices-card {
@@ -102,12 +103,12 @@
         position: absolute;
         top: 50%;
         right: 0;
-        
         width: 40px;
         height: 40px;
         border-radius: 50%;
         color: $color-basic-b;
         background-color: $color-secondary;
         z-index: 50;
+        cursor: pointer;
     }
 }

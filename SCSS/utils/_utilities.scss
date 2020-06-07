@@ -55,7 +55,9 @@
     margin-right: $basic_unit*3;
 }
 
-
+.mt-tiny {
+    margin-top: $basic_unit*0.5; 
+ }
 .mt-xs {
     // 24
     margin-top: $basic_unit*1.5;
@@ -157,6 +159,9 @@
 }
 .flex-wrap-w {
     flex-wrap: wrap;
+}
+.jc-flex-start {
+    justify-content: flex-start;
 }
 .jc-center {
     justify-content: center;
