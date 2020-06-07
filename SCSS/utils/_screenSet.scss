@@ -1,0 +1,20 @@
+@mixin screen-lg() {
+    @media all and (max-width:1200px) {
+        @content;
+    }
+}
+@mixin screen-md() {
+    @media all and (max-width:767px) {
+        @content;
+    }
+}
+@mixin screen-sm() {
+    @media all and (max-width:578px) {
+        @content;
+    }
+}
+@mixin screen-xs() {
+    @media all and (max-width:320px) {
+        @content;
+    }
+}

@@ -1,3 +1,12 @@
 {
-    "previewServer.port": 56202
+    "previewServer.port": 52084,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            // 轉譯成什麼檔案
+            "extensionName": ".min.css",
+            // 轉譯後的路徑
+            "savePath": "/CSS/"
+        }
+    ]
 }

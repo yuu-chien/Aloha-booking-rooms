@@ -1,0 +1,149 @@
+.result-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    z-index: 10;
+    background: $color-basic-w;
+    li {
+        cursor: pointer;
+    }
+    a {
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+.mr-37 {
+    margin-right: 37px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+
+.fillet-8 {
+    border-radius: 8px;
+}
+
+.result-b-btm-w {
+    border-bottom: 1.5px solid $color-basic-w;
+}
+
+.result-b-btm-sec {
+    border-bottom: 1.5px solid $color-secondary;
+}
+
+.result-filter-item {
+    position: relative;
+    input[type=checkbox] {
+        opacity: 0;
+    }
+    input[type=checkbox] + label:before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: 1.5px solid $color-tertiary;
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        margin-top: 0.15rem;
+    }
+    input[type=checkbox]:checked + label:before {
+        background-color: $color-primary;
+        border: 1.5px solid $color-primary;
+
+    }
+}
+
+
+.result-card {
+    height: 200px;
+    .result-card-img {
+        width: 35%;
+        overflow: hidden;
+        border-radius: 8px 0px 0px 8px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .result-card-info {
+        width: 65%;
+        padding: 1rem;
+        border-radius: 0px 8px 8px 0px;
+        &:hover {
+            box-shadow: 3px 3px 5px $color-secondary;
+        }
+    }
+    .result-card-tag {
+        padding: 4px 8px;
+        margin-right: 4px;
+        color: $color-tertiary;
+        border-radius: 12px;
+        background-color: $color-secondary;
+    }
+}
+
+.pagination-bar {
+    padding: 1rem;
+    .pagination {
+        width: 38px;
+        height: 38px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-basic-b;
+        border-radius: 3px;
+    }
+    .pagination-active {
+        background-color: #fff;
+    }
+}
+
+.sub {
+    padding: 32px 0;
+    height: 104px;
+}
+
+
+.result-input-w {
+    width: 312px;
+    padding: 10px 0;
+}
+
+.result-tab-active {
+    color: $color-primary;
+}
+
+.budget-block {
+    .price-rangeSlider {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: $color-primary;
+        &::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: $color-primary;
+            position: absolute;
+            top: 0;
+            left: 0;
+    
+        }
+    }
+}
+
+.price-box {
+    width: 45%;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+}

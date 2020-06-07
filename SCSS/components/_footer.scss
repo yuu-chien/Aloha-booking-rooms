@@ -1,0 +1,12 @@
+.footer {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    li {
+        cursor: pointer;
+    }
+    a {
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
