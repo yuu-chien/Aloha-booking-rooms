@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./CSS/aloha.all.min.css">
-    <title>ALOHA｜</title>
+    <title>ALOHA｜result for Reykjavík</title>
 </head>
 <body>
     <!-- navbar -->
@@ -117,11 +117,13 @@
                 <div class="row">
                     <!-- 左側選單 -->
                     <section class="col-4">
-                        <div class="d-flex font-primary pt-xs">
+                        <div class="d-flex font-primary pt-10">
                             <h2 class="fz-m fw-bold mr-tiny">Reykjavík</h2>
                             <span class="color-primary">128</span>
                         </div>
-                        <ul class="bgc-secondary pl-xs pr-xs fillet-8">
+                        <!-- 選單選項列表 -->
+                        <ul class="bgc-secondary pl-xs pr-xs fillet-8 mt-xs">
+                            <!-- 選單選項列表 --- Deals -->
                             <li class="pt-xs pb-xs result-b-btm-w">
                                 <h5 class="fw-bold color-basic-b mb-1">Deals</h5>
                                 <ul>
@@ -139,6 +141,7 @@
                                     </li>
                                 </ul>
                             </li>
+                            <!-- 選單選項列表 --- Popular filter -->
                             <li class="pt-xs pb-xs result-b-btm-w">
                                 <h5 class="fw-bold color-basic-b mb-1">Popular filter</h5>
                                 <ul>
@@ -156,6 +159,22 @@
                                     </li>
                                 </ul>
                             </li>
+                            <!-- 選單選項列表 ---Budget -->
+                            <li class="pt-xs pb-xs result-b-btm-w">
+                                <h5 class="fw-bold color-basic-b mb-1">Budget</h5>
+                                <div class="d-flex ai-center">
+                                    <div class="price-box">
+                                        <p class="fz-ets fw-bold color-basic-b">Min price</p>
+                                        <p class="fz-xxs color-tertiary">TWD 800</p>
+                                    </div>
+                                    <div class="mr-tiny ml-tiny"> - </div>
+                                    <div class="price-box">
+                                        <p class="fz-ets fw-bold color-basic-b">Max price</p>
+                                        <p class="fz-xxs color-tertiary">TWD 8000</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 選單選項列表 --- Rating -->
                             <li class="pt-xs pb-xs result-b-btm-w">
                                 <h5 class="fw-bold color-basic-b mb-1">Rating</h5>
                                 <ul>
@@ -185,6 +204,7 @@
                                     </li>
                                 </ul>
                             </li>
+                            <!-- 選單選項列表 --- Stay type -->
                             <li class="pt-xs pb-xs">
                                 <h5 class="fw-bold color-basic-b mb-1">Stay type</h5>
                                 <ul>
@@ -224,7 +244,7 @@
                                     <div class="result-card-img">
                                         <img src="./img/_hr_1.jpg" alt="">
                                     </div>
-                                    <div class="result-card-info d-flex flex-d-col jc-space-between">
+                                    <div class="result-card-info d-flex flex-d-col jc-center">
                                         <div class="mb-1">
                                             <div class="d-flex jc-space-between">
                                                 <div class="d-flex fz-ets color-tertiary">
@@ -233,24 +253,28 @@
                                                     <p class="">1.2 km from center</p>
                                                 </div>
                                                 <div class="d-flex fz-xxs">
-                                                    <p class="color-basic-b">★★★★</p>
-                                                    <p class="color-tertiary">4.0 (283)</p>
+                                                    <p class="color-basic-b mr-4">★★★★★</p>
+                                                    <p class="color-tertiary">5.0 (623)</p>
                                                 </div>
                                             </div>
                                             <h3 class="fw-bold fz-sm font-primary color-basic-b">Skuggia Hotel</h3>
                                         </div>
-                                        <div class="d-flex flex-d-col">
-                                            <p class="fw-bold fz-xxs">Deluxe Double Room</p>
-                                            <p class="fz-ets color-tertiary">2 guests・1 bed (Queen size)</p>
-                                        </div>
-                                        <div class="d-flex jc-space-between ai-flex-end">
-                                            <div class="d-flex fz-ets">
-                                                <p class="result-card-tag">Free cancellation</p>
-                                                <p class="result-card-tag">No prepayment</p>
+                                        <div class="d-flex jc-space-between">
+                                            <div class="d-flex flex-d-col jc-space-between">
+                                                <div class="mb-1">
+                                                    <p class="fw-bold fz-xxs">Deluxe Double Room</p>
+                                                    <p class="fz-ets color-tertiary">2 guests・1 bed (Queen size)</p>
+                                                </div>
+                                                <div class="d-flex fz-ets">
+                                                    <p class="result-card-tag">Free cancellation</p>
+                                                    <p class="result-card-tag">No prepayment</p>
+                                                </div>
                                             </div>
-                                            <div class="ta-right">
-                                                <p class="fz-ets color-tertiary">per night</p>
-                                                <p class="fw-bold fz-sm font-primary color-basic-b">TWD 1,980</p>
+                                            <div class="d-flex jc-space-between ai-flex-end">
+                                                <div class="result-card-info-discount ta-right">
+                                                    <p class="fz-ets color-tertiary">per night</p>
+                                                    <p class="fw-bold fz-sm font-primary color-primary">TWD 2,020</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -261,7 +285,7 @@
                                     <div class="result-card-img">
                                         <img src="./img/_hr_2.jpg" alt="">
                                     </div>
-                                    <div class="result-card-info d-flex flex-d-col jc-space-between">
+                                    <div class="result-card-info d-flex flex-d-col jc-center">
                                         <div class="mb-1">
                                             <div class="d-flex jc-space-between">
                                                 <div class="d-flex fz-ets color-tertiary">
@@ -270,25 +294,28 @@
                                                     <p class="">8 km from center</p>
                                                 </div>
                                                 <div class="d-flex fz-xxs">
-                                                    <p class="color-basic-b">★★★★★</p>
+                                                    <p class="color-basic-b mr-4">★★★★★</p>
                                                     <p class="color-tertiary">5.0 (121)</p>
                                                 </div>
                                             </div>
                                             <h3 class="fw-bold fz-sm font-primary color-basic-b">Hótel Heiðmörk</h3>
                                         </div>
-                                        <div class="d-flex flex-d-col">
-                                            <p class="fw-bold fz-xxs">Standard Double Room</p>
-                                            <p class="fz-ets color-tertiary">2 guests・1 bed (Queen size)</p>
-                                        </div>
-                                        <div class="d-flex jc-space-between ai-flex-end">
-                                            <div class="d-flex fz-ets">
-                                                <p class="result-card-tag">Free cancellation</p>
-                                                <!-- <p class="result-card-tag">No prepayment</p> -->
+                                        <div class="d-flex jc-space-between">
+                                            <div class="d-flex flex-d-col jc-space-between">
+                                                <div class="mb-1">
+                                                    <p class="fw-bold fz-xxs">Standard Double Room</p>
+                                                    <p class="fz-ets color-tertiary">2 guests・1 bed (Queen size)</p>
+                                                </div>
+                                                <div class="d-flex fz-ets">
+                                                    <p class="result-card-tag">Free cancellation</p>
+                                                </div>
                                             </div>
-                                            <div class="result-card-info-discount ta-right">
-                                                <p class="fz-ets color-tertiary">per night</p>
-                                                <del>TWD 2,460</del>
-                                                <p class="fw-bold fz-sm font-primary color-primary">TWD 2,460</p>
+                                            <div class="d-flex jc-space-between ai-flex-end">
+                                                <div class="result-card-info-discount ta-right">
+                                                    <p class="fz-ets color-tertiary">per night</p>
+                                                    <del>TWD 2,460</del>
+                                                    <p class="fw-bold fz-sm font-primary color-primary">TWD 2,460</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -330,10 +357,6 @@
 
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script>
+<script src="./JS/all.js"></script>
 
-    let a = $(".result-navbar").height();
-    $(".result-main").css("top",a);
-
-</script>
 </html>
