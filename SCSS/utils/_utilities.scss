@@ -25,6 +25,9 @@
 .fw-bold {
     font-weight: bolder;
 }
+.ml-tiny {
+    margin-left: $basic_unit*0.5;
+}
 .ml-1 {
     margin-left: $basic_unit !important;
 }
@@ -50,6 +53,12 @@
 .mr-m {
     // 48
     margin-right: $basic_unit*3;
+}
+
+
+.mt-xs {
+    // 24
+    margin-top: $basic_unit*1.5;
 }
 
 // mb --- margin-bottom
