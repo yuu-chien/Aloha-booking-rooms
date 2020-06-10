@@ -1,12 +1,15 @@
 
 .header {
-    height: 80vh;
+    height: 320px;
     margin-bottom: 120px;
     background: url(https://images.unsplash.com/photo-1494367067577-502b2c602fcc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1889&q=80) no-repeat;
     background-attachment: fixed;
     background-position: center 65%;
     background-size: cover;
     position: relative;
+    .container {
+        margin-top: 72px;
+    }
     .index-search-bar {
         width: 920px;
         border-radius: 8px;
