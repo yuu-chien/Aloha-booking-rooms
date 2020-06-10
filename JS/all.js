@@ -5,7 +5,7 @@ $(".lan-list").click(function(){
 })
 
 $(".top-tab").on('click',function(){
-    console.log("999")
+    // console.log("999")
     $(this).addClass("top-tab-active").siblings().removeClass("top-tab-active");
 })
 
@@ -76,6 +76,12 @@ function appendData (myJson){
     }
     
 }
+
+
+// 
+$('.pagination').on('click',function(){
+    $(this).addClass('pagination-active').siblings().removeClass('pagination-active');
+});
 
 // choices-slider
 // let choicesContent = document.querySelector(".choices-slider");
