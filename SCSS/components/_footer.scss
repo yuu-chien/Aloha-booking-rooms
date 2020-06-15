@@ -3,6 +3,9 @@
     padding-bottom: 28px;
     li {
         cursor: pointer;
+        @include screen-md{
+            font-size: 14px;
+        }
     }
     a {
         &:hover {
