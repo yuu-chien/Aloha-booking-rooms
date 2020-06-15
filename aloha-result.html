@@ -127,15 +127,15 @@
                             <li class="pt-xs pb-xs result-b-btm-w">
                                 <h5 class="fw-bold color-basic-b mb-1">Deals</h5>
                                 <ul>
-                                    <li class="result-filter-item mb-tiny">
+                                    <li class="result-filter-item mb-tiny" data-filter="freeCancellation">
                                         <input type="checkbox" name="freeCancellation" id="freeCancellation">
                                         <label for="freeCancellation">Free cancellation</label>
                                     </li>
-                                    <li class="result-filter-item mb-tiny">
+                                    <li class="result-filter-item mb-tiny" data-filter="noPrepayment">
                                         <input type="checkbox" name="noPrepayment" id="noPrepayment">
                                         <label for="noPrepayment">No prepayment</label>
                                     </li>
-                                    <li class="result-filter-item">
+                                    <li class="result-filter-item" data-filter="specialOffer">
                                         <input type="checkbox" name="specialOffer" id="specialOffer">
                                         <label for="specialOffer">Special offers</label>
                                     </li>
@@ -145,15 +145,15 @@
                             <li class="pt-xs pb-xs result-b-btm-w">
                                 <h5 class="fw-bold color-basic-b mb-1">Popular filter</h5>
                                 <ul>
-                                    <li class="result-filter-item mb-tiny">
+                                    <li class="result-filter-item mb-tiny" data-filter="Breakfast">
                                         <input type="checkbox" name="Breakfast" id="Breakfast">
                                         <label for="Breakfast">Breakfast included</label>
                                     </li>
-                                    <li class="result-filter-item mb-tiny">
+                                    <li class="result-filter-item mb-tiny" data-filter="FreeWi-Fi">
                                         <input type="checkbox" name="FreeWi-Fi" id="FreeWi-Fi">
                                         <label for="FreeWi-Fi">Free Wi-Fi</label>
                                     </li>
-                                    <li class="result-filter-item">
+                                    <li class="result-filter-item" data-filter="swimmingPool">
                                         <input type="checkbox" name="swimmingPool" id="swimmingPool">
                                         <label for="swimmingPool">Swimming pool</label>
                                     </li>
@@ -181,27 +181,27 @@
                             <li class="pt-xs pb-xs result-b-btm-w">
                                 <h5 class="fw-bold color-basic-b mb-1">Rating</h5>
                                 <ul>
-                                    <li class="result-filter-item mb-tiny">
+                                    <li class="result-filter-item mb-tiny" data-filter="fantastic">
                                         <input type="checkbox" name="fantastic" id="fantastic">
                                         <label for="fantastic">★★★★★ 5.0</label>
                                     </li>
-                                    <li class="result-filter-item mb-tiny">
+                                    <li class="result-filter-item mb-tiny" data-filter="excellent">
                                         <input type="checkbox" name="excellent" id="excellent">
                                         <label for="excellent">★★★★ 4.0</label>
                                     </li>
-                                    <li class="result-filter-item mb-tiny">
+                                    <li class="result-filter-item mb-tiny" data-filter="great">
                                         <input type="checkbox" name="great" id="great">
                                         <label for="great">★★★ 3.0</label>
                                     </li>
-                                    <li class="result-filter-item mb-tiny">
+                                    <li class="result-filter-item mb-tiny" data-filter="good">
                                         <input type="checkbox" name="good" id="good">
                                         <label for="good">★★ 2.0</label>
                                     </li>
-                                    <li class="result-filter-item mb-tiny">
+                                    <li class="result-filter-item mb-tiny" data-filter="nice">
                                         <input type="checkbox" name="nice" id="nice">
                                         <label for="nice">★ 1.0</label>
                                     </li>
-                                    <li class="result-filter-item">
+                                    <li class="result-filter-item" data-filter="none">
                                         <input type="checkbox" name="none" id="none">
                                         <label for="none">Unrated</label>
                                     </li>
@@ -211,19 +211,19 @@
                             <li class="pt-xs pb-xs">
                                 <h5 class="fw-bold color-basic-b mb-1">Stay type</h5>
                                 <ul>
-                                    <li class="result-filter-item mb-tiny">
+                                    <li class="result-filter-item mb-tiny" data-filter="hotel">
                                         <input type="checkbox" name="hotel" id="hotel">
                                         <label for="hotel">Hotel</label>
                                     </li>
-                                    <li class="result-filter-item mb-tiny">
+                                    <li class="result-filter-item mb-tiny" data-filter="apartment">
                                         <input type="checkbox" name="apartment" id="apartment">
                                         <label for="apartment">Apartment</label>
                                     </li>
-                                    <li class="result-filter-item mb-tiny">
+                                    <li class="result-filter-item mb-tiny" data-filter="unique">
                                         <input type="checkbox" name="unique" id="unique">
                                         <label for="unique">Unique</label>
                                     </li>
-                                    <li class="result-filter-item">
+                                    <li class="result-filter-item" data-filter="hostel">
                                         <input type="checkbox" name="hostel" id="hostel">
                                         <label for="hostel">Hostel</label>
                                     </li>
@@ -303,5 +303,13 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="./JS/all.js"></script>
+<script>
+
+    // $('.result-filter-item').on("click",function(){
+    //     let a = $(this).data("filter");
+    //     console.log("a",a);
+    // })
+
+</script>
 
 </html>

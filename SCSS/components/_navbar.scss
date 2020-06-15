@@ -40,3 +40,9 @@
         padding: 8px 16px;
     }
 }
+
+.nav-list {
+    @include screen-xs{
+        display: none;
+    }
+}

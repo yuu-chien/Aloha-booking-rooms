@@ -14,7 +14,12 @@
     }
 }
 @mixin screen-xs {
-    @media all and (max-width:320px) {
+    @media all and (max-width:360px) {
         @content;
     }
 }
+// @mixin screen-xs {
+//     @media all and (max-width:320px) {
+//         @content;
+//     }
+// }
