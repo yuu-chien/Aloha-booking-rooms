@@ -17,7 +17,7 @@
     }
 }
 
-.logo {
+.logo,.logo-mob {
     a {
         width: 96px;
         height: 24px;
@@ -27,6 +27,10 @@
         white-space: nowrap;
         overflow: hidden;
     }
+}
+
+.nav-mob-list {
+    display: none;
 }
 
 .drop-list {
@@ -41,8 +45,32 @@
     }
 }
 
-.nav-list {
+
+// ----------------
+
+.navbar {
+    .container {
+        @include screen-xs{
+            justify-content: center;
+        }
+    }
+}
+
+.nav-list, .logo {
     @include screen-xs{
-        display: none;
+        display: none !important;
+    }
+}
+
+.nav-mob-list {
+    @include screen-xs{
+        width: 100%;
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        color: #121212;
+    }
+    a {
+        color: #121212;
     }
 }

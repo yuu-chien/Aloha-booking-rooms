@@ -123,6 +123,11 @@
     @include screen-md {
         margin-bottom: 312px;
     }
+    h2 {
+        @include screen-sm {
+            font-size: 32px;
+        }
+    }
     .index-search-bar {
         @include screen-md{
             max-width: 75%;
@@ -136,7 +141,10 @@
         }
         li {
             @include screen-md{
-                margin-bottom: 16px;
+                margin-bottom: $basic_unit;
+            }
+            @include screen-sm {
+                width: 100%;
             }
         }
     }
@@ -149,6 +157,25 @@
 
 .pop-card {
     @include screen-sm{
-        margin-bottom: 8px;
+        margin-bottom: $basic_unit*0.5;
+    }
+}
+
+.top-tab {
+    @include screen-sm{
+        font-size: 10px !important;
+        padding-left: $basic_unit*0.5;
+        padding-right: $basic_unit*0.5;
+    }
+}
+
+.get-ins-card {
+    @include screen-sm {
+        margin-bottom: $basic_unit;
+    }
+    .card-img-wrap, .card-txt-wrap {
+        @include screen-sm {
+            margin-bottom: $basic_unit*0.5;
+        }
     }
 }
