@@ -155,7 +155,18 @@
         margin-bottom: 8px !important;
     }
 }
-
+.budget-price {
+    @include screen-md{
+        display: none !important;
+    }
+}
+.budget-price-mob {
+    padding: 8px;
+    display: none;
+    @include screen-md{
+        display: flex !important;
+    }
+}
 
 .result-input-w {
     @include screen-md {
@@ -180,6 +191,7 @@
         display: flex !important;
     }
 }
+
 
 
 .result-list {

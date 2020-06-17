@@ -121,6 +121,9 @@
     padding-right: $basic_unit*3;
 }
 // pl --- padding-light
+.pl-tiny {
+    padding-left: $basic_unit*0.5;
+}
 .pl-xs {
     // 24
     padding-left: $basic_unit*1.5;
