@@ -13,6 +13,11 @@ $(".top-tab").on('click',function(){
 // 首頁之外的 navbar+searchBar 因為 position:fixed，其後之 <main> position: absolute 距離 top:高度
 let resultNavH = $(".result-navbar").height();
 $(".result-main").css("top",resultNavH);
+$(window).resize(function(){
+    resultNavH = $(".result-navbar").height();
+    $(".result-main").css("top",resultNavH);
+});
+
 
 // result-list　
 // 搜尋結果列表的資料
