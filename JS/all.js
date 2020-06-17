@@ -36,27 +36,27 @@ function appendData (myJson){
                         <img src="${myJson[i].coverImg}" alt="">
                     </div>
                     <div class="result-card-info d-flex flex-d-col jc-center">
-                        <div class="mb-1">
+                        <div class="mb-1 mob-mb">
                             <div class="d-flex jc-space-between">
                                 <div class="d-flex fz-ets color-tertiary">
-                                    <p class="color-primary">${myJson[i].locationTown}</p>
-                                    <p class="">．</p>
-                                    <p class="">${myJson[i].farCenter}</p>
+                                    <p class="color-primary res-card-locationTown">${myJson[i].locationTown}</p>
+                                    <p class="res-card-dot">．</p>
+                                    <p class="res-card-farCenter">${myJson[i].farCenter}</p>
                                 </div>
                                 <div class="d-flex fz-xxs">
                                     <p class="color-basic-b mr-4">${myJson[i].stars}</p>
                                     <p class="color-tertiary">${myJson[i].score} (${myJson[i].reviewsNum})</p>
                                 </div>
                             </div>
-                            <h3 class="fw-bold fz-sm font-primary color-basic-b">${myJson[i].name}</h3>
+                            <h3 class="fw-bold fz-sm font-primary color-basic-b result-card-name">${myJson[i].name}</h3>
                         </div>
                         <div class="d-flex jc-space-between">
                             <div class="d-flex flex-d-col jc-space-between">
-                                <div class="mb-1">
+                                <div class="mb-1 mob-mb">
                                     <p class="fw-bold fz-xxs">${myJson[i].roomType}</p>
                                     <p class="fz-ets color-tertiary">${myJson[i].bedType}</p>
                                 </div>
-                                <div class="d-flex fz-ets">
+                                <div class="d-flex fz-ets res-card-deals">
                                     <p class="result-card-tag">${myJson[i].deal1}</p>
                                     <p class="result-card-tag">${myJson[i].deal2}</p>
                                 </div>
@@ -64,7 +64,7 @@ function appendData (myJson){
                             <div class="d-flex jc-space-between ai-flex-end">
                                 <div class="result-card-info-discount ta-right">
                                     <p class="fz-ets color-tertiary">per night</p>
-                                    <p class="fw-bold fz-sm font-primary color-primary">${myJson[i].price}</p>
+                                    <p class="fw-bold fz-sm font-primary color-primary result-card-price">${myJson[i].price}</p>
                                 </div>
                             </div>
                         </div>
@@ -76,6 +76,10 @@ function appendData (myJson){
     }
     
 }
+
+$('.result-tab').on('click',function(){
+    $(this).addClass('result-tab-active').siblings().removeClass('result-tab-active');
+})
 
 
 // 

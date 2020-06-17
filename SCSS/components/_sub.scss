@@ -1,0 +1,34 @@
+.sub {
+    padding: 32px 0;
+    
+}
+
+.index-sub {
+    padding-top: 92px;
+    padding-bottom: 92px;
+}
+
+.sub-tit {
+    @include screen-md{
+        width: 25%;
+        font-size: 24px;
+    }
+}
+
+.sub-input {
+    ::placeholder {
+        color: $color-tertiary;
+    }
+    background-color: $color-basic-w;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    padding: 16px;
+    @include screen-md{
+        height: 56px;
+    }
+}
+.sub-btn {
+    @include screen-md{
+        height: 56px;
+    }
+}

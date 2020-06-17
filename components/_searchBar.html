@@ -1,6 +1,6 @@
 <!-- index 搜尋bar -->
 <div class="d-flex bgc-secondary index-search-bar">
-    <ul class="d-flex">
+    <ul class="d-flex index-search-bar-list">
         <li class="d-flex jc-center ai-center mr-1 bgc-basic-w">
             <span class="material-icons color-basic-b pl-1 pr-1">location_on</span>
             <input type="text" placeholder="Destination" class="input">
@@ -14,15 +14,18 @@
             <input type="text" placeholder="Guests" class="input">
         </li>
     </ul>
-    <button class="button btn-primary btn-b">SEARCH</button>
+    <button class="button btn-primary btn-b">
+        <a href="./aloha-result.html">
+            SEARCH
+        </a>
+    </button>
 </div>
 
 
 <!-- ---------------------------------- -->
 <!-- 顯示搜尋結果的搜尋bar -->
-<section class="pt-xs pb-xs mb-xs bgc-secondary">
+<section class="pt-xs pb-xs bgc-secondary">
     <div class="container">
-
         <div class="d-flex bgc-secondary index-search-bar">
             <ul class="d-flex jc-space-between">
                 <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
@@ -32,7 +35,7 @@
                         <input type="text" placeholder="Reykjavík, Iceland" class="result-input">
                     </div>
                 </li>
-                <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
+                <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w result-input-date">
                     <span class="material-icons color-basic-b pl-1 pr-1">date_range</span>
                     <div class="w-40p">
                         <p class="fz-ets fw-bold color-basic-b">Check-in</p>
@@ -43,6 +46,15 @@
                         <input type="text" placeholder="23 June" class="result-input">
                     </div>
                 </li>
+                <!-- date for mobile block start-->
+                <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w result-input-date-mob">
+                    <span class="material-icons color-basic-b pl-1 pr-1">date_range</span>
+                    <div class="w-100p">
+                        <p class="fz-ets fw-bold color-basic-b">Check-in / out</p>
+                        <input type="text" placeholder="21 June - 23 June" class="result-input">
+                    </div>
+                </li>
+                <!-- date for mobile block end -->
                 <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
                     <span class="material-icons color-basic-b pl-1 pr-1">person</span>
                     <div class="w-100p">

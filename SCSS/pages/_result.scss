@@ -89,7 +89,7 @@
     }
 }
 
-.pagination-bar {
+.pagination-bar, .pagination-bar-mob {
     padding: 1rem;
     .pagination {
         width: 38px;
@@ -105,11 +105,10 @@
         background-color: #fff;
     }
 }
-
-.sub {
-    padding: 32px 0;
-    height: 104px;
+.pagination-prv {
+    background-color: $color-secondary !important;
 }
+
 
 
 .result-input-w {
@@ -146,4 +145,108 @@
     padding: 8px;
     background-color: #fff;
     border-radius: 4px;
+}
+
+
+// -----------------
+
+.mob-mb {
+    @include screen-md{
+        margin-bottom: 8px !important;
+    }
+}
+
+
+.result-input-w {
+    @include screen-md {
+        width: 180px;
+        margin-right: 8px !important;
+        padding: 0;
+    }
+    .material-icons {
+        @include screen-md {
+            padding: 8px !important;
+        }
+    }
+}
+.result-input-date {
+    @include screen-md{
+        display: none !important;
+    }
+}
+.result-input-date-mob {
+    display: none !important;
+    @include screen-md{
+        display: flex !important;
+    }
+}
+
+
+.result-list {
+    li {
+        @include screen-md{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+}
+.result-card {
+    @include screen-md{
+        height: 150px;
+    }
+}
+.res-card-locationTown {
+    @include screen-md{
+        font-size: 12px;
+    }
+}
+.res-card-dot, .res-card-farCenter {
+    @include screen-md{
+        display: none;
+    }
+}
+.res-card-deals {
+    @include screen-md{
+        flex-direction: column;
+        .result-card-tag {
+            width: 65%;
+            margin-right: 0px;
+            margin-bottom: 4px;
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+}
+.result-card-name, .result-card-price {
+    @include screen-md{
+        font-size: 16px;
+        color: #000;
+    }
+}
+
+.result-filter-item {
+    @include screen-md {
+        font-size: 14px;
+    }
+}
+
+.pagination-bar {
+    @include screen-md {
+        display: none !important;
+    }
+}
+.pagination-bar-mob {
+    display: none;
+    border-radius: 8px;
+    @include screen-md {
+        display: flex !important;
+    }
+    .pagination-mob-prv, .pagination-mob-nxt {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+    }
+    .pagination-mob-prv {
+        background-color: $color-secondary;
+    }
 }

@@ -38,6 +38,7 @@
                     <a href="">Login</a>
                 </li>
             </ul>
+            <!-- nav mobile block start -->
             <ul class="nav-mob-list">
                 <li><span class="material-icons fw-bold fz-sm">menu</span></li>
                 <li>
@@ -49,6 +50,7 @@
                     <a href="">Login</a>
                 </li>
             </ul>
+            <!-- nav mobile block end -->
         </div>
     </nav>
 
@@ -444,6 +446,7 @@
     $(document).ready(function(){
         var owl = $('.owl-carousel');
         $(".owl-carousel").owlCarousel({
+            stagePadding: 45,
             loop: true,
             items: 4,
             margin: 30,
