@@ -311,3 +311,17 @@
     }
 }
 
+.index-search-bar-mob {
+    .result-input-mob {
+        width: 100px;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.result-aside-mob {
+    display: none;
+    @include screen-sm {
+        display: flex;
+    }
+}
