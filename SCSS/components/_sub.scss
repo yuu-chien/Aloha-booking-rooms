@@ -13,6 +13,11 @@
         width: 25%;
         font-size: 24px;
     }
+    @include screen-sm {
+        width: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 1rem;
+    }
 }
 
 .sub-input {
@@ -30,5 +35,12 @@
 .sub-btn {
     @include screen-md{
         height: 56px;
+    }
+}
+
+.sub-mob-wrap {
+    @include screen-sm {
+        flex-direction: column;
+        justify-content: center;
     }
 }

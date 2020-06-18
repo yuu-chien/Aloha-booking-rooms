@@ -19,3 +19,20 @@
         color: $color-tertiary;
     }
 }
+
+
+.index-search-bar-mob {
+    display: none;
+    @include screen-xs {
+        display: block;
+    }
+}
+
+.result-input-mob {
+    border: none;
+    background-color: $color-secondary;
+    ::placeholder {
+        font-size: 12px;
+        color: $color-secondary;
+    }
+}

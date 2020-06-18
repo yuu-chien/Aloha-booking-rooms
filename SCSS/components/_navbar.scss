@@ -1,3 +1,4 @@
+// 首頁 Navbar 樣式
 .navbar {
     position: fixed;
     top: 0;
@@ -16,7 +17,6 @@
         }
     }
 }
-
 .logo,.logo-mob {
     a {
         width: 96px;
@@ -45,9 +45,7 @@
     }
 }
 
-
-// ----------------
-
+// ----- 首頁 Navbar RWD -----
 .navbar {
     .container {
         @include screen-xs{
@@ -55,13 +53,11 @@
         }
     }
 }
-
 .nav-list, .logo {
     @include screen-xs{
         display: none !important;
     }
 }
-
 .nav-mob-list {
     @include screen-xs{
         width: 100%;
@@ -72,5 +68,65 @@
     }
     a {
         color: #121212;
+    }
+}
+
+
+// 非首頁之 Navbar 樣式
+.result-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    z-index: 10;
+    background: $color-basic-w;
+    li {
+        cursor: pointer;
+    }
+    a {
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+.result-input-w {
+    width: 312px;
+    padding: 10px 0;
+}
+
+// ----- 非首頁之 Navbar RWD -----
+.result-navbar {
+    .index-search-bar {
+        @include screen-xs {
+            display: none !important;
+        }
+    }
+}
+.result-navbar-list, .logo {
+    @include screen-xs{
+        display: none !important;
+    }
+}
+.result-input-w {
+    @include screen-md {
+        width: 180px;
+        margin-right: 8px !important;
+        padding: 0;
+    }
+    .material-icons {
+        @include screen-md {
+            padding: 8px !important;
+        }
+    }
+}
+.result-input-date {
+    @include screen-md{
+        display: none !important;
+    }
+}
+.result-input-date-mob {
+    display: none !important;
+    @include screen-md{
+        display: flex !important;
     }
 }

@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./img/5-Stars.ico"/>
     <!-- OwlCarousel 2 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!--  -->
     <link rel="stylesheet" href="./CSS/aloha.all.min.css">
     <title>ALOHA．result for Reykjavík</title>
 </head>
@@ -17,7 +18,7 @@
             <h1 class="logo">
                 <a href="./aloha-index.html" alt="ALOHA">ALOHA</a>
             </h1>
-            <ul class="d-flex ai-center">
+            <ul class="d-flex ai-center result-navbar-list">
                 <li>
                     <div class="lan-list d-flex ai-center mr-m">
                         <span class="material-icons">language</span>
@@ -37,10 +38,23 @@
                     <a href="">Login</a>
                 </li>
             </ul>
+            <!-- nav mobile block start -->
+            <ul class="nav-mob-list">
+                <li><span class="material-icons fw-bold fz-sm">menu</span></li>
+                <li>
+                    <h1 class="logo-mob">
+                        <a href="./aloha-index.html" alt="ALOHA">ALOHA</a>
+                    </h1>
+                </li>
+                <li>
+                    <a href="">Login</a>
+                </li>
+            </ul>
+            <!-- nav mobile block end -->
         </div>
         <!-- search bar -->
         <section class="pt-xs pb-xs bgc-secondary">
-            <div class="container">
+            <div class="container w-100p">
                 <div class="d-flex bgc-secondary index-search-bar">
                     <ul class="d-flex jc-space-between">
                         <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
@@ -61,7 +75,7 @@
                                 <input type="text" placeholder="23 June" class="result-input">
                             </div>
                         </li>
-                        <!-- date for mobile block start-->
+                        <!-- date for table block start-->
                         <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w result-input-date-mob">
                             <span class="material-icons color-basic-b pl-1 pr-1">date_range</span>
                             <div class="w-100p">
@@ -69,7 +83,7 @@
                                 <input type="text" placeholder="21 June - 23 June" class="result-input">
                             </div>
                         </li>
-                        <!-- date for mobile block end -->
+                        <!-- date for table block end -->
                         <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
                             <span class="material-icons color-basic-b pl-1 pr-1">person</span>
                             <div class="w-100p">
@@ -78,6 +92,19 @@
                             </div>
                         </li>
                         <button class="button btn-primary btn-b">SEARCH</button>
+                    </ul>
+                </div>
+                <div class="bgc-secondary index-search-bar-mob">
+                    <ul class="">
+                        <li class="bgc-secondary">
+                            <input type="text" placeholder="Reykjavík" class="result-input-mob">
+                        </li>
+                        <li class="bgc-secondary">
+                            <input type="text" placeholder="21 June - 23 June" class="result-input-mob">
+                        </li>
+                        <li class="bgc-secondary">
+                            <input type="text" placeholder="2 adults・1 room" class="result-input-mob">
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -90,7 +117,7 @@
             <div class="container">
                 <div class="row">
                     <!-- 左側選單 -->
-                    <aside class="col-4">
+                    <aside class="col-4 result-aside">
                         <div class="d-flex font-primary pt-10">
                             <h2 class="fz-m fw-bold mr-tiny">Reykjavík</h2>
                             <span class="color-primary">128</span>
@@ -216,7 +243,7 @@
                         </ul>
                     </aside>
                     <!-- 右側列表 -->
-                    <section class="col-8">
+                    <section class="col-12 col-sm-8 result-content">
                         <!-- 右側列表 --- 搜尋結果篩選  -->
                         <div class="d-flex pt-xs owl-carousel result-tab-list">
                             <div class="result-tab result-tab-active fw-bold" data-merge="1">Recommended</div>
@@ -225,13 +252,12 @@
                             <div class="result-tab fw-bold ta-center" data-merge="2">Distance to City Center</div>
                             <!-- 右側列表 --- 搜尋結果列表 -->
                         </div>
-                        <ul class="mb-m  result-list">
+                        <ul class="mb-m result-list">
                             <!-- appendData -->
                         </ul>
                         <!-- 右側列表 --- 頁碼 -->
                         <div class="pagination-bar d-flex jc-space-between ai-center bgc-secondary">
                             <button class="paginationprv button btn-secondary btn-s">PREVIOUS</button>
-                            <!-- ul.d-flex>li*5>a{$} -->
                             <ul class="d-flex">
                                 <li class="pagination pagination-active"><a href="">1</a></li>
                                 <li class="pagination"><a href="">2</a></li>
@@ -244,7 +270,7 @@
                             <button class="button btn-primary btn-s">NEXT</button>
                         </div>
                             <!-- pagination-bar for mobile block start -->
-                            <div class="pagination-bar-mob jc-space-between ai-center bgc-secondary">
+                            <div class="pagination-bar-mob ai-center bgc-secondary">
                                 <div class="pagination-mob-prv d-flex jc-center ai-center btn-secondary">
                                     <span class="material-icons">navigate_before</span>
                                 </div>
@@ -267,7 +293,7 @@
         <!-- Subscribe for Exclusive Offer -->
         <section class="sub bgc-secondary w-100p">
             <div class="container d-flex ai-center h-100p">
-                <div class="d-flex jc-space-between ai-center w-100p h-100p">
+                <div class="d-flex jc-space-between ai-center w-100p h-100p sub-mob-wrap">
                     <p class="sub-tit fz-m fw-bold font-primary color-basic-b mr-37">Subscribe for Exclusive Offer</p>
                     <div class="d-flex flex-1">
                         <input type="text" name="" id="" placeholder="Your email address" class="input sub-input">
@@ -312,12 +338,12 @@
     //     console.log("a",a);
     // })
 
-        $('.result-tab-list').owlCarousel({
-            loop:false,
-            nav: false,
-            dots: false,
-            merge:true,
-        })
+    $('.result-tab-list').owlCarousel({
+        loop:false,
+        nav: false,
+        dots: false,
+        merge:true,
+    })
 </script>
 
 </html>

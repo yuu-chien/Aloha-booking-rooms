@@ -42,12 +42,13 @@ function appendData (myJson){
                     </div>
                     <div class="result-card-info d-flex flex-d-col jc-center">
                         <div class="mb-1 mob-mb">
-                            <div class="d-flex jc-space-between">
+                            <div class="d-flex jc-space-between result-card-top">
                                 <div class="d-flex fz-ets color-tertiary">
                                     <p class="color-primary res-card-locationTown">${myJson[i].locationTown}</p>
                                     <p class="res-card-dot">．</p>
                                     <p class="res-card-farCenter">${myJson[i].farCenter}</p>
                                 </div>
+                                <h3 class="fw-bold fz-sm font-primary color-basic-b result-card-name-mob">${myJson[i].name}</h3>
                                 <div class="d-flex fz-xxs">
                                     <p class="color-basic-b mr-4">${myJson[i].stars}</p>
                                     <p class="color-tertiary">${myJson[i].score} (${myJson[i].reviewsNum})</p>
@@ -56,23 +57,31 @@ function appendData (myJson){
                             <h3 class="fw-bold fz-sm font-primary color-basic-b result-card-name">${myJson[i].name}</h3>
                         </div>
                         <div class="d-flex jc-space-between">
-                            <div class="d-flex flex-d-col jc-space-between">
+                            <div class="d-flex flex-d-col jc-space-between result-card-bottom">
                                 <div class="mb-1 mob-mb">
-                                    <p class="fw-bold fz-xxs">${myJson[i].roomType}</p>
+                                    <p class="fw-bold fz-xxs res-card-roomType">${myJson[i].roomType}</p>
                                     <p class="fz-ets color-tertiary">${myJson[i].bedType}</p>
                                 </div>
                                 <div class="d-flex fz-ets res-card-deals">
                                     <p class="result-card-tag">${myJson[i].deal1}</p>
                                     <p class="result-card-tag">${myJson[i].deal2}</p>
                                 </div>
+                                <div class="result-card-info-discount-mob">
+                                    <p class="fw-bold fz-sm font-primary color-primary result-card-price ta-right">${myJson[i].price}</p>
+                                </div>
                             </div>
+
                             <div class="d-flex jc-space-between ai-flex-end">
                                 <div class="result-card-info-discount ta-right">
                                     <p class="fz-ets color-tertiary">per night</p>
                                     <p class="fw-bold fz-sm font-primary color-primary result-card-price">${myJson[i].price}</p>
                                 </div>
                             </div>
+                            
+
+
                         </div>
+                        
                     </div>
                 </a>
             </li>`

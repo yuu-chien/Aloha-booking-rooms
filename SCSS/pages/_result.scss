@@ -1,39 +1,21 @@
-.result-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    z-index: 10;
-    background: $color-basic-w;
-    li {
-        cursor: pointer;
-    }
-    a {
-        &:hover {
-            color: $color-primary;
-        }
-    }
-}
-
 .mr-37 {
     margin-right: 37px;
 }
 .pt-10 {
     padding-top: 10px;
 }
-
 .fillet-8 {
     border-radius: 8px;
 }
-
 .result-b-btm-w {
     border-bottom: 1.5px solid $color-basic-w;
 }
-
 .result-b-btm-sec {
     border-bottom: 1.5px solid $color-secondary;
 }
 
+
+// 左側選單 -- 選單選項列表 - 選項
 .result-filter-item {
     position: relative;
     input[type=checkbox] {
@@ -58,8 +40,39 @@
 
     }
 }
+// 左側選單 -- 選單選項列表 - 預算盒
+.budget-block {
+    .price-rangeSlider {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: $color-primary;
+        &::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: $color-primary;
+            position: absolute;
+            top: 0;
+            left: 0;
+    
+        }
+    }
+}
+.price-box {
+    width: 45%;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+}
 
 
+// 右側列表 -- 右側結果列表 - 上方篩選
+.result-tab-active {
+    color: $color-primary;
+}
+// 右側列表 -- 右側結果列表 - card
 .result-card {
     height: 200px;
     .result-card-img {
@@ -88,7 +101,7 @@
         background-color: $color-secondary;
     }
 }
-
+// 右側列表 -- 右側結果列表 - 頁碼
 .pagination-bar, .pagination-bar-mob {
     padding: 1rem;
     .pagination {
@@ -111,50 +124,20 @@
 
 
 
-.result-input-w {
-    width: 312px;
-    padding: 10px 0;
+// ----- RWD ------
+// 左側選單 -- 選單選項列表
+.result-aside {
+    @include screen-xs {
+        display: none !important;
+    }
 }
-
-.result-tab-active {
-    color: $color-primary;
-}
-
-.budget-block {
-    .price-rangeSlider {
-        position: relative;
-        width: 100%;
-        height: 2px;
-        background-color: $color-primary;
-        &::before {
-            content: '';
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background-color: $color-primary;
-            position: absolute;
-            top: 0;
-            left: 0;
-    
-        }
+.result-filter-item {
+    @include screen-md {
+        font-size: 14px;
     }
 }
 
-.price-box {
-    width: 45%;
-    padding: 8px;
-    background-color: #fff;
-    border-radius: 4px;
-}
-
-
-// -----------------
-
-.mob-mb {
-    @include screen-md{
-        margin-bottom: 8px !important;
-    }
-}
+// 左側選單 -- 選單選項列表 - 預算盒
 .budget-price {
     @include screen-md{
         display: none !important;
@@ -168,45 +151,63 @@
     }
 }
 
-.result-input-w {
-    @include screen-md {
-        width: 180px;
-        margin-right: 8px !important;
-        padding: 0;
-    }
-    .material-icons {
-        @include screen-md {
-            padding: 8px !important;
-        }
-    }
-}
-.result-input-date {
-    @include screen-md{
+// 右側列表 -- 右側結果列表 - 上方篩選
+.result-tab-list {
+    @include screen-xs {
         display: none !important;
     }
 }
-.result-input-date-mob {
-    display: none !important;
-    @include screen-md{
-        display: flex !important;
+
+// 右側列表 -- 右側結果列表
+.result-content {
+    @include screen-xs {
+        width: 100% !important;
+        padding: 0 !important;
     }
 }
-
-
-
 .result-list {
+    @include screen-xs {
+        width: 100% !important;
+    }
     li {
+        
         @include screen-md{
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
+        @include screen-xs {
+            width: 100% !important;
+            padding: 0 !important;
+        }
     }
 }
+
+// 右側列表 -- 右側結果列表 - card
 .result-card {
-    @include screen-md{
+    @include screen-md {
         height: 150px;
+        .result-card-img {
+            width: 150px;
+        }
     }
 }
+.result-card-info {
+    @include screen-xs {
+        padding: 8px !important;
+    }
+}
+.result-card-top {
+    @include screen-xs {
+        flex-direction: column;
+    }
+}
+.result-card-bottom {
+    @include screen-xs {
+        width: 100%;
+    }
+}
+
+// 右側列表 -- 右側結果列表 - card 細項
 .res-card-locationTown {
     @include screen-md{
         font-size: 12px;
@@ -215,6 +216,28 @@
 .res-card-dot, .res-card-farCenter {
     @include screen-md{
         display: none;
+    }
+}
+.result-card-name {
+    @include screen-md{
+        font-size: 16px;
+        color: #000;
+    }
+    @include screen-xs {
+        display: none;
+    }
+}
+.result-card-name-mob {
+    display: none;
+    font-size: 16px;
+    color: #000;
+    @include screen-xs {
+        display: block;
+    }
+}
+.res-card-roomType {
+    @include screen-sm {
+        font-size: 14px;
     }
 }
 .res-card-deals {
@@ -228,20 +251,29 @@
             text-align: center;
         }
     }
+    @include screen-xs {
+        display: none !important;
+    }
 }
-.result-card-name, .result-card-price {
+.result-card-price {    
     @include screen-md{
         font-size: 16px;
         color: #000;
     }
 }
-
-.result-filter-item {
-    @include screen-md {
-        font-size: 14px;
+.result-card-info-discount {
+    @include screen-sm{
+        display: none;
+    }
+}
+.result-card-info-discount-mob {
+    display: none;
+    @include screen-sm{
+        display: block;
     }
 }
 
+// 右側列表 -- 右側結果列表 - 頁碼
 .pagination-bar {
     @include screen-md {
         display: none !important;
@@ -252,6 +284,12 @@
     border-radius: 8px;
     @include screen-md {
         display: flex !important;
+        justify-content: space-between;
+    }
+    @include screen-xs {
+        padding: 8px;
+        margin-right: 8px;
+        margin-left: 8px;
     }
     .pagination-mob-prv, .pagination-mob-nxt {
         width: 40px;
@@ -260,5 +298,16 @@
     }
     .pagination-mob-prv {
         background-color: $color-secondary;
+        margin-right: 20px;
+    }
+    .pagination-mob-nxt {
+        margin-left: 20px;
     }
 }
+
+.mob-mb {
+    @include screen-md{
+        margin-bottom: 8px !important;
+    }
+}
+
