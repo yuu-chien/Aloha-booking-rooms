@@ -20,5 +20,5 @@ hex-liveCourse-week 8
 <br>
 
 ## Content
-使用 BS4 格線系統，搭配自定義 utilities
+使用 BS4 格線系統，搭配自定義 utilities\
 根據設計稿設定 768px 和 360px 兩種螢幕斷點。
