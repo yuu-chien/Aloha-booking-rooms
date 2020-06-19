@@ -140,3 +140,10 @@
         display: block;
     }
 }
+
+.result-room-type-mob {
+    display: none;
+    @include screen-sm {
+        display: block;
+    }
+}
