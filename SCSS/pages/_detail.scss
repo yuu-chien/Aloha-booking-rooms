@@ -77,3 +77,30 @@
         }
     }
 }
+
+.result-sel-room {
+    @include screen-sm {
+        margin-bottom: 16px;
+        .seb-tit {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.result-gallery, .result-sel-room-list, .result-room-type-tit {
+    @include screen-sm {
+        display: none !important;
+    }
+}
+
+.result-room-type {
+    padding-right: 8px;
+}
+
+.result-room-info-top {
+    @include screen-sm {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

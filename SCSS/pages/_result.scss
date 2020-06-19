@@ -325,3 +325,9 @@
         display: flex;
     }
 }
+
+.result-room-info {
+    @include screen-sm {
+        padding: auto;
+    }
+}
