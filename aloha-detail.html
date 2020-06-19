@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="shortcut icon" href="./img/5-Stars.ico"/>
+    <!--  -->
     <link rel="stylesheet" href="./CSS/aloha.all.min.css">
     <title>ALOHA．Skuggia Hotel</title>
 </head>
@@ -15,7 +16,7 @@
             <h1 class="logo">
                 <a href="./aloha-index.html" alt="ALOHA">ALOHA</a>
             </h1>
-            <ul class="d-flex ai-center">
+            <ul class="d-flex ai-center result-navbar-list">
                 <li>
                     <div class="lan-list d-flex ai-center mr-m">
                         <span class="material-icons">language</span>
@@ -35,10 +36,23 @@
                     <a href="">Login</a>
                 </li>
             </ul>
+            <!-- nav mobile block start -->
+            <ul class="nav-mob-list">
+                <li><span class="material-icons fw-bold fz-sm">menu</span></li>
+                <li>
+                    <h1 class="logo-mob">
+                        <a href="./aloha-index.html" alt="ALOHA">ALOHA</a>
+                    </h1>
+                </li>
+                <li>
+                    <a href="">Login</a>
+                </li>
+            </ul>
+            <!-- nav mobile block end -->
         </div>
         <!-- search bar -->
         <section class="pt-xs pb-xs bgc-secondary">
-            <div class="container">
+            <div class="container w-100p">
                 <div class="d-flex bgc-secondary index-search-bar">
                     <ul class="d-flex jc-space-between">
                         <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
@@ -48,7 +62,7 @@
                                 <input type="text" placeholder="Reykjavík, Iceland" class="result-input">
                             </div>
                         </li>
-                        <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
+                        <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w result-input-date">
                             <span class="material-icons color-basic-b pl-1 pr-1">date_range</span>
                             <div class="w-40p">
                                 <p class="fz-ets fw-bold color-basic-b">Check-in</p>
@@ -59,6 +73,15 @@
                                 <input type="text" placeholder="23 June" class="result-input">
                             </div>
                         </li>
+                        <!-- date for table block start-->
+                        <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w result-input-date-mob">
+                            <span class="material-icons color-basic-b pl-1 pr-1">date_range</span>
+                            <div class="w-100p">
+                                <p class="fz-ets fw-bold color-basic-b">Check-in / out</p>
+                                <input type="text" placeholder="21 June - 23 June" class="result-input">
+                            </div>
+                        </li>
+                        <!-- date for table block end -->
                         <li class="result-input-w d-flex ai-center mr-1 bgc-basic-w">
                             <span class="material-icons color-basic-b pl-1 pr-1">person</span>
                             <div class="w-100p">
@@ -69,9 +92,23 @@
                         <button class="button btn-primary btn-b">SEARCH</button>
                     </ul>
                 </div>
+                <div class="bgc-secondary index-search-bar-mob w100p">
+                    <ul class="d-flex jc-space-between w-100p">
+                        <li class="d-flex ai-center bgc-secondary">
+                            <input type="text" placeholder="Reykjavík" class="result-input-mob">
+                        </li>
+                        <li class="d-flex ai-center bgc-secondary border-l">
+                            <input type="text" placeholder="21 June - 23 June" class="result-input-mob">
+                        </li>
+                        <li class="d-flex ai-center bgc-secondary border-l">
+                            <input type="text" placeholder="2 adults・1 room" class="result-input-mob">
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </nav>
+
     <main class="result-main d-flex flex-d-col jc-center ai-center w-100p">
         <!-- gallery -->
         <section class="result-gallery pt-xs pb-xs">
