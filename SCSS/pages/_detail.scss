@@ -9,12 +9,21 @@
 
 .gallery-lg {
     height: 434px;
+    @include screen-md {
+        height: 268px;
+    }
 }
 .gallery-m {
     height: 213px;
+    @include screen-md {
+        height: 132px;
+    }
 }
 .gallery-s {
     height: 151px;
+    @include screen-md {
+        height: 93px;
+    }
 }
 
 .select-tab {
@@ -38,5 +47,33 @@
     .type-list-info {
         width: 65%;
         padding: 8px 16px;
+    }
+}
+
+
+.room-fea-list {
+    @include screen-md {
+        // flex-wrap: nowrap;
+        align-items: center;
+        li {
+            width: 15%;
+        }
+        .material-icons {
+            font-size: 16px;
+        }
+    }
+}
+
+.type-list {
+    .type-list-img{
+        @include screen-md {
+            width: 50%;
+        }
+    }
+    .type-list-info {
+        @include screen-md {
+            width: 50%;
+            padding: 8px;
+        }
     }
 }

@@ -16,6 +16,9 @@
 .btn-b {
     padding: 16px 32px;
     font-size: 16px;
+    @include screen-md {
+        font-size: 12px;
+    }
 }
 
 .btn-primary {
@@ -39,4 +42,11 @@
 
 .btn-bg-b {
     background-color: #121212;
+}
+
+// See All 10 Photos 
+.btn-see {
+    @include screen-md {
+        padding: 8px;
+    }
 }

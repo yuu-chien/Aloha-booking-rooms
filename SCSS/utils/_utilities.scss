@@ -68,8 +68,11 @@
 }
 
 // mb --- margin-bottom
+.mb-mini {
+    margin-bottom: $basic_unit*0.25;
+}
 .mb-tiny {
-   margin-bottom: $basic_unit*0.5; 
+   margin-bottom: $basic_unit*0.5;
 }
 .mb-1 {
     margin-bottom: $basic_unit !important;
