@@ -128,3 +128,15 @@
         padding: 8px;
     }
 }
+
+.gallery-list-mob {
+    height: 240px;
+    overflow: hidden;
+}
+
+.result-gallery-mob {
+    display: none;
+    @include screen-sm {
+        display: block;
+    }
+}
