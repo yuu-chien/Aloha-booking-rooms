@@ -92,6 +92,12 @@
 
 
 // pt --- padding-top
+.pt-tiny {
+    padding-top: $basic_unit*0.5;
+}
+.pt-1 {
+    padding-top: $basic_unit !important;
+}
 .pt-xs {
     // 24
     padding-top: $basic_unit*1.5;
@@ -100,6 +106,9 @@
 // pb --- padding-bottom
 .pb-tiny {
     padding-bottom: $basic_unit*0.5;
+}
+.pb-1 {
+    padding-bottom: $basic_unit !important;
 }
 .pb-xs {
     // 24
