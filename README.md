@@ -4,9 +4,9 @@ hex-liveCourse-week 8
 <br>
 
 ## Pages
-* 首頁　　　（aloha-index.html）
-* 搜尋列表頁（aloha-result.html）
-* 商品細節頁（aloha-detail.html）
+* [首頁　　　（aloha-index.html）](https://yuu-chien.github.io/hex-liveCourse-week8/aloha-index.html)
+* [搜尋列表頁（aloha-result.html）](https://yuu-chien.github.io/hex-liveCourse-week8/aloha-result.html)
+* [商品細節頁（aloha-detail.html）](https://yuu-chien.github.io/hex-liveCourse-week8/aloha-detail.html)
 <br>
 
 ## Source
