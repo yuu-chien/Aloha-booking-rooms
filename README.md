@@ -1,5 +1,7 @@
 # ALOHA
-hex-liveCourse-week 8
+hex-liveCourse-week 8 
+
+2020 春季．六角網頁切版直播班｜第八週
 
 <br>
 
