@@ -1,19 +1,18 @@
 # ALOHA
-hex-liveCourse-week 8 
 
 2020 春季．六角網頁切版直播班｜第八週
 
 <br>
 
 ## Pages
-* [首頁　　　（aloha-index.html）](https://yuu-chien.github.io/hex-liveCourse-week8/aloha-index.html)
-* [搜尋列表頁（aloha-result.html）](https://yuu-chien.github.io/hex-liveCourse-week8/aloha-result.html)
-* [商品細節頁（aloha-detail.html）](https://yuu-chien.github.io/hex-liveCourse-week8/aloha-detail.html)
+* [首頁　　　（aloha-index.html）](https://yuu-chien.github.io/Aloha-booking-rooms/aloha-index.html)
+* [搜尋列表頁（aloha-result.html）](https://yuu-chien.github.io/Aloha-booking-rooms/aloha-result.html)
+* [商品細節頁（aloha-detail.html）](https://yuu-chien.github.io/Aloha-booking-rooms/aloha-detail.html)
 <br>
 
 ## Source
 * [Adobe XD 設計稿](https://xd.adobe.com/view/0cf6ec93-07a3-492f-58f2-9767ba1cfdfb-7ac7/)
-* [Unsplash](https://unsplash.com/collections/10582133/aloha-for-hex-livestream-course-hw8)
+* [Unsplash](https://unsplash.com/collections/10582133/rooms)
 * [Material design icons](https://material.io/resources/icons/?style=baseline)
 * Google Fonts
   * [Raleway](https://fonts.google.com/specimen/Raleway)
