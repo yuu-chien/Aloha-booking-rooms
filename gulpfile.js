@@ -4,9 +4,9 @@ const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 
 function html() {
-    return gulp.src('pages/**/*.+(html|njk)')
+    return gulp.src('./src/**/*.+(html|njk)')
         .pipe(nunjucksRender({
-            path: ['src/templates/'] // String or Array
+            path: ['./src/templates/'] // String or Array
         }))
         .pipe(gulp.dest('dist'));
 }
@@ -21,13 +21,15 @@ function browser() {
     browserSync.init({
         server: {
             baseDir: './dist',
-            reloadDebounce: 2000 // 加入 Debounce 可以避免短時間大量編譯，造成瀏覽器不斷重新 Refresh 的問題
+            // 加入 Debounce 可以避免短時間大量編譯，造成瀏覽器不斷重新 Refresh 的問題
+            reloadDebounce: 2000,
         },
     });
 }
 
 function watch() {
-    watch('src/scss/*.scss', gulp.series(styles));
+    gulp.watch('src/**/*.njk', gulp.series(html));
+    gulp.watch('src/scss/*.scss', gulp.series(styles));
 }
 
 exports.default = gulp.series(html, styles, gulp.parallel(browser, watch));
