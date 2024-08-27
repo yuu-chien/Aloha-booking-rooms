@@ -5,9 +5,9 @@
 <br>
 
 ## Pages
-* [首頁　　　（aloha-index.html）](https://yuu-chien.github.io/Aloha-booking-rooms/aloha-index.html)
-* [搜尋列表頁（aloha-result.html）](https://yuu-chien.github.io/Aloha-booking-rooms/aloha-result.html)
-* [商品細節頁（aloha-detail.html）](https://yuu-chien.github.io/Aloha-booking-rooms/aloha-detail.html)
+* [首頁](https://yuu-chien.github.io/Aloha-booking-rooms/aloha-index.html)
+* [搜尋列表頁](https://yuu-chien.github.io/Aloha-booking-rooms/aloha-result.html)
+* [商品細節頁](https://yuu-chien.github.io/Aloha-booking-rooms/aloha-detail.html)
 <br>
 
 ## Source
